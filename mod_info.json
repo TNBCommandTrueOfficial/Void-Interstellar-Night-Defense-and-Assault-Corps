@@ -1,0 +1,28 @@
+{
+    "id":"tnb_vndac", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"Void Night Defense & Assault Corps", # Displayed to the player
+	"author":"TNB_Command",
+    "utility":"false",
+	"version":"0.1 DEV",
+	"description":"Adds the Void Nite Defense and Assault Corps faction to the Persean sector. (original work DO NOT STEAL)",
+    "gameVersion": "0.95.1a-RC6", 
+  	"jars":["jars/VNDAC.jar"],
+  	"modPlugin":"tnb.vndac.VndacPlugin",
+	  	"dependencies": [
+        #{
+        #    "id": "lw_lazylib",
+        #    "name": "LazyLib",
+        #    #"version": "2.7b"
+        #},
+        #{
+        #    "id": "MagicLib",
+        #    "name": "MagicLib",
+        #    #"version": "0.34"
+        #},
+        #{
+        #    "id": "shaderLib",
+        #    "name": "GraphicsLib",
+        #    #"version": "1.5.1"
+        #}
+    ],
+}
