@@ -1,17 +1,29 @@
-package systems;
+package tnb.vndac.world.systems;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.concurrent.locks.Condition;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
+import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
+import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin.AsteroidFieldParams;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
-
-import java.awt.*;
-import java.util.Arrays;
+import com.fs.starfarer.api.impl.campaign.terrain.MagneticFieldTerrainPlugin.MagneticFieldParams;
+import org.lazywizard.lazylib.MathUtils;
+import sun.rmi.runtime.Log;
+import utils.UtilTools;
 
 import static utils.UtilTools.addMarketplace;
 
@@ -25,8 +37,11 @@ public class CelakaSystem {
         //It's by no means necessary to set a background to your star system.
         //However, let's see how to do it.
         //If you prefer a non-descript star field, simply disable this line.
-        system.setBackgroundTextureFilename("graphics/backgrounds/celaka_background.jpg");
+        system.setBackgroundTextureFilename("graphics/VNC/backgrounds/celaka_background.jpg");
 
+        //setup all distances here
+        final float asteroidField1Dist = 2500f;
+        final float asteroidBelt1Dist = 2000f;
 
         //  Star instantiation using the StarSystemAPI
         //  initStar(
@@ -54,35 +69,59 @@ public class CelakaSystem {
         ////////////////////////
         // Structure Entities //
         ////////////////////////
-        
-        //Buoy
-        SectorEntityToken buoy = system.addCustomEntity("celaka_buoy",
-                "Celaka Buoy",
-                "nav_buoy",
-                "neutral");
-        buoy.setCircularOrbitPointingDown(star, 40, 7000, 400);
+        {
+            //Buoy
+            SectorEntityToken buoy = system.addCustomEntity("celaka_buoy",
+                    "Celaka Buoy",
+                    "nav_buoy",
+                    "neutral");
+            buoy.setCircularOrbitPointingDown(star, 40, 7000, 400);
 
-        //Relay
-        SectorEntityToken relay = system.addCustomEntity("celaka_relay",
-                "Celaka Relay",
-                "comm_relay",
-                "neutral");
-        relay.setCircularOrbitPointingDown(star, 190, 7000, 400);
+            //Relay
+            SectorEntityToken relay = system.addCustomEntity("celaka_relay",
+                    "Celaka Relay",
+                    "comm_relay",
+                    "neutral");
+            relay.setCircularOrbitPointingDown(star, 190, 7000, 400);
 
-        //Array
-        SectorEntityToken array = system.addCustomEntity("celaka_array",
-                "Celaka Array",
-                "sensor_array",
-                "neutral");
-        array.setCircularOrbitPointingDown(star, 280, 7000, 400);
+            //Array
+            SectorEntityToken array = system.addCustomEntity("celaka_array",
+                    "Celaka Array",
+                    "sensor_array",
+                    "neutral");
+            array.setCircularOrbitPointingDown(star, 280, 7000, 400);
 
-        //Gate
-        SectorEntityToken sol_gate = system.addCustomEntity("celaka_gate",
-                "Celaka Gate",
-                "inactive_gate",
-                null);
-        sol_gate.setCircularOrbit(star, 120, 7000, 400);
+            //Gate
+            SectorEntityToken sol_gate = system.addCustomEntity("celaka_gate",
+                    "Celaka Gate",
+                    "inactive_gate",
+                    null);
+            sol_gate.setCircularOrbit(star, 120, 7000, 400);
+        }
 
+        ///////////////////////////////
+        /// Asteroid Fields & Belts ///
+        ///////////////////////////////
+        {
+
+            SectorEntityToken celakaAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,
+                    new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
+                            200f, // min radius
+                            400f, // max radius
+                            9, // min asteroid count
+                            20, // max asteroid count
+                            4f, // min asteroid radius
+                            16f, // max asteroid radius
+                            "Asteroids Field")); // null for default name
+            celakaAF1.setCircularOrbit(star, 220, asteroidField1Dist, 220);
+
+            //asteroid belt1 ring
+            system.addAsteroidBelt(star, 1000, asteroidBelt1Dist, 800, 250, 350, Terrain.ASTEROID_BELT, "Inner Band");
+            system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.red, 256f, asteroidBelt1Dist - 200, 250f);
+            system.addRingBand(star, "misc", "rings_asteroids0", 256f, 0, Color.red, 256f, asteroidBelt1Dist, 350f);
+            system.addRingBand(star, "misc", "rings_asteroids0", 256f, 2, Color.red, 256f, asteroidBelt1Dist + 200, 400f);
+
+        }
         // Asteroid Belt
         system.addAsteroidBelt(star, 750, 6000, 500, 700, 300, Terrain.ASTEROID_BELT, "Asteroid Belt");
         system.addRingBand(star, "misc", "rings_asteroids0", 256f, 4, Color.white,256f,6000,295f,Terrain.ASTEROID_BELT,"Asteroid Belt1");
@@ -94,7 +133,7 @@ public class CelakaSystem {
         system.addEntity(asteroid_belt_jump_point);
 
         // Kuiper Belt
-        system.addAsteroidBelt(star, 1000, 23000, 1000, 150, 300, Terrain.ASTEROID_BELT, "Celaka Belt");
+        system.addAsteroidBelt(star, 1000, 20000, 1000, 150, 300, Terrain.ASTEROID_BELT, "Celaka Belt");
         system.addRingBand(star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 23000, 305f, Terrain.ASTEROID_BELT,"Kuiper Belt1");
         system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white,256f,23000,295f,Terrain.ASTEROID_BELT,"Kuiper Belt2");
 
@@ -117,12 +156,12 @@ public class CelakaSystem {
                 star,  // Current Star from above
                 StarAge.AVERAGE, //This setting determines what kind of potential entities are added.
                 0, 1, //Min-Max entities to add, here we'll just add 1 entity!
-                1000, //Radius to start adding at. Make sure it's greater than your star's actual radius! You can have planets inside a star otherwise (maybe cool???)
+                2500, //Radius to start adding at. Make sure it's greater than your star's actual radius! You can have planets inside a star otherwise (maybe cool???)
                 1, //Name offset - next planet will be <system name> <roman numeral of this parameter + 1> if using system-based names.
                 false); // whether to use custom or system-name based names
 
         ////////////////////////////////////////////////////////////////////////////////////////////////
-        //////////////////////////////////////// Planet Bhratra ////////////////////////////////////////
+        ///////////////////////////////////////// Planet Konta /////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////////////////////////////
         PlanetAPI planetKonta = system.addPlanet(
                 "konta",

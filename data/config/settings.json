@@ -70,13 +70,13 @@
 
 	"graphics":{
 		"blueprint_packages":{
-			"vindac_package":"graphics/icons/cargo/vindac_package_bp.png",
-			"vindac_command_package":"graphics/icons/cargo/vindac_command_package_bp.png",
-			"vindac_recon_package":"graphics/icons/cargo/vindac_recon_package_bp.png",
+			"vindac_package":"graphics/VNC/icons/cargo/vindac_package_bp.png",
+			"vindac_command_package":"graphics/VNC/icons/cargo/vindac_command_package_bp.png",
+			"vindac_recon_package":"graphics/VNC/icons/cargo/vindac_recon_package_bp.png",
 		},
 		"terrain":{
-			"nebula_red":"graphics/terrain/nebula_red.png",
-			"nebula_red_map":"graphics/terrain/nebula_red_map.png",
+			"nebula_red":"graphics/VNC/terrain/nebula_red.png",
+			"nebula_red_map":"graphics/VNC/terrain/nebula_red_map.png",
 		},
 		#"characters":{
 		#	"andrada":"graphics/portraits/characters/andrada1.png",
@@ -85,7 +85,7 @@
 		#	"baikal":"graphics/portraits/characters/baikal_daud.png",
 		#},
 		"intel":{
-			"border":"graphics/icons/intel_border_cyan.png",
+			"border":"graphics/VNC/icons/intel_border_cyan.png",
 		},
 		#"stations":{
 		#	"default_station":"graphics/stations/station_side00.png",
@@ -93,27 +93,27 @@
 		#	"station_side01":"graphics/stations/station_side01.png",
 		#},
 		"backgrounds":{
-			"celakaBackground":"graphics/backgrounds/celaka_background.jpg",
+			"celakaBackground":"graphics/VNC/backgrounds/celaka_background.jpg",
 		},
 		#"illustrations":{
 		#	"space_bar":"graphics/illustrations/space_bar.jpg",
 		#},
 		"fx":{
-			"tnb_warp_effect":"graphics/fx/tnb_warp_effect.png",
-			"tnb_warp_enter":"graphics/fx/tnb_warp_enterexit.png",
-			"tnb_warp_exit":"graphics/fx/tnb_warp_enterexit.png",
+			"tnb_warp_effect":"graphics/VNC/fx/tnb_warp_effect.png",
+			"tnb_warp_enter":"graphics/VNC/fx/tnb_warp_enterexit.png",
+			"tnb_warp_exit":"graphics/VNC/fx/tnb_warp_enterexit.png",
 		},
 		"planets":{
-			"ssmod_mercury": "graphics/planets/ssmod_mercury.jpg",
-			"ssmod_venus": "graphics/planets/ssmod_venus.jpg",
-			"ssmod_terra": "graphics/planets/ssmod_terra.jpg",
-			"ssmod_mars": "graphics/planets/ssmod_mars.jpg",
-			"ssmod_ceres": "graphics/planets/ssmod_ceres.jpg",
-			"ssmod_jupiter": "graphics/planets/ssmod_jupiter.jpg",
-			"ssmod_saturn": "graphics/planets/ssmod_saturn.jpg",
-			"ssmod_uranus": "graphics/planets/ssmod_uranus.jpg",
-			"ssmod_neptune": "graphics/planets/ssmod_neptune.jpg",
-			"ssmod_pluto": "graphics/planets/ssmod_pluto.jpg",
+			"ssmod_mercury": "graphics/VNC/planets/ssmod_mercury.jpg",
+			"ssmod_venus": "graphics/VNC/planets/ssmod_venus.jpg",
+			"ssmod_terra": "graphics/VNC/planets/ssmod_terra.jpg",
+			"ssmod_mars": "graphics/VNC/planets/ssmod_mars.jpg",
+			"ssmod_ceres": "graphics/VNC/planets/ssmod_ceres.jpg",
+			"ssmod_jupiter": "graphics/VNC/planets/ssmod_jupiter.jpg",
+			"ssmod_saturn": "graphics/VNC/planets/ssmod_saturn.jpg",
+			"ssmod_uranus": "graphics/VNC/planets/ssmod_uranus.jpg",
+			"ssmod_neptune": "graphics/VNC/planets/ssmod_neptune.jpg",
+			"ssmod_pluto": "graphics/VNC/planets/ssmod_pluto.jpg",
 			"atmosphere":"graphics/planets/atmosphere.png",  # used if atmosphereAbove=false
 			"atmosphere2":"graphics/planets/atmosphere2.png", # used atmosphereAbove=true
 			"default_sun_halo":"graphics/planets/sun_halo.png", # default halo that's rendered on top of stars
@@ -129,19 +129,19 @@
 			#"bread":"graphics/planets/bread.png",
 		},
 		"moons":{
-		"ssmod_luna": "graphics/moons/ssmod_luna.jpg",
-		"ssmod_io": "graphics/moons/ssmod_io.jpg",
-		"ssmod_europa": "graphics/moons/ssmod_europa.jpg",
-		"ssmod_ganymede": "graphics/moons/ssmod_ganymede.jpg",
-		"ssmod_callisto": "graphics/moons/ssmod_callisto.jpg",
-		"ssmod_enceladus": "graphics/moons/ssmod_enceladus.jpg",
-		"ssmod_titan": "graphics/moons/ssmod_titan.jpg",
-		"ssmod_oberon": "graphics/moons/ssmod_oberon.jpg",
-		"ssmod_triton": "graphics/moons/ssmod_triton.jpg",
-		"ssmod_charon": "graphics/moons/ssmod_triton.jpg"
+		"ssmod_luna": "graphics/VNC/moons/ssmod_luna.jpg",
+		"ssmod_io": "graphics/VNC/moons/ssmod_io.jpg",
+		"ssmod_europa": "graphics/VNC/moons/ssmod_europa.jpg",
+		"ssmod_ganymede": "graphics/VNC/moons/ssmod_ganymede.jpg",
+		"ssmod_callisto": "graphics/VNC/moons/ssmod_callisto.jpg",
+		"ssmod_enceladus": "graphics/VNC/moons/ssmod_enceladus.jpg",
+		"ssmod_titan": "graphics/VNC/moons/ssmod_titan.jpg",
+		"ssmod_oberon": "graphics/VNC/moons/ssmod_oberon.jpg",
+		"ssmod_triton": "graphics/VNC/moons/ssmod_triton.jpg",
+		"ssmod_charon": "graphics/VNC/moons/ssmod_charon.jpg"
 		},
 		"belts":{
-			"ssmod_saturn_belt": "graphics/planets/ssmod_saturn_belt.png"
+			"ssmod_saturn_belt": "graphics/VNC/planets/ssmod_saturn_belt.png"
 		}
 	}
 }

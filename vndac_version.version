@@ -14,7 +14,7 @@
     # created after October 2012 will not have a Public folder, unfortunately.
     #
     # Example links for common hosts:
-    "masterVersionFile":"https://raw.githubusercontent.com/TNBCommandTrueOfficial/Void-Nite-Defense-and-Assault-Corps/master/vndac_version.version?token=GHSAT0AAAAAABXU2ORDLNBJBK5U6TS44TVCYYIEI2A",
+    "masterVersionFile":"https://raw.githubusercontent.com/TNBCommandTrueOfficial/Void-Nite-Defense-and-Assault-Corps/master/vndac_version.version",
 
     "modName":"Void Nite Defense and Assault Corps",
 

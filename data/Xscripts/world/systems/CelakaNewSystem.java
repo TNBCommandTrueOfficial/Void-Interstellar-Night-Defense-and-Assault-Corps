@@ -1,20 +1,29 @@
-package systems;
+package tnb.vndac.world.systems;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.concurrent.locks.Condition;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
+import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin.AsteroidFieldParams;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
+import com.fs.starfarer.api.impl.campaign.terrain.MagneticFieldTerrainPlugin.MagneticFieldParams;
 import org.lazywizard.lazylib.MathUtils;
-
-import java.awt.*;
-import java.util.Arrays;
-import java.util.Collections;
+import sun.rmi.runtime.Log;
+import utils.UtilTools;
 
 import static utils.UtilTools.addMarketplace;
 
@@ -24,7 +33,7 @@ public class CelakaNewSystem {
         StarSystemAPI system = sector.createStarSystem("Celaka");
         system.getLocation().set(-39000, 39000); //top leftish
 
-        system.setBackgroundTextureFilename("graphics/backgrounds/celaka_background.jpg");
+        system.setBackgroundTextureFilename("graphics/VNC/backgrounds/celaka_background.jpg");
 
         //setup all distances here
         final float asteroids1Dist = 2750f;
@@ -78,7 +87,7 @@ public class CelakaNewSystem {
         system.addRingBand(celakaStar, "misc", "rings_asteroids0", 256f, 0, Color.gray, 256f, asteroidBelt1Dist, 350f);
         system.addRingBand(celakaStar, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, asteroidBelt1Dist + 200, 400f);
 
-        // Hye-Steel: Useful world way far out, ruins, decivilized
+        // Hye-Steel: Useful tnb.vndac.world way far out, ruins, decivilized
         PlanetAPI hye_steel = system.addPlanet("hye_steel",
                 celakaStar,
                 "Hye-Steel",

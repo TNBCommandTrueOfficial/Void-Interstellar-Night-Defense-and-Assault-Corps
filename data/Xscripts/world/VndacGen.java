@@ -1,7 +1,8 @@
-package world;
+package tnb.vndac.world;
 
 import com.fs.starfarer.api.campaign.SectorAPI;
-import systems.CelakaSystem;
+import tnb.vndac.world.systems.CelakaNewSystem;
+import tnb.vndac.world.systems.CelakaSystem;
 
 public class VndacGen {
     public void generate(SectorAPI sector) {
