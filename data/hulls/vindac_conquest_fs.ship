@@ -2,7 +2,7 @@
   "hullName": "VINDAC Conquest FS",
   "hullId": "vindac_conquest_fs",
   "hullSize": "CAPITAL_SHIP",
-  "spriteName": "graphics/VNC/ships/vindac_conquest_fs.png",
+  "spriteName": "graphics/VNC/ships/vnc_conquest_fs.png",
   "style": "MIDLINE",
   "coversColor": "60,60,60,255",
   "height": 400,

@@ -1,0 +1,101 @@
+{	
+    "playableFaction":true,
+	"startingFaction":true,
+    "corvusCompatible":true,
+	"showIntelEvenIfDead":false,
+	"freeStart":true,
+	"spawnAsFactionId":"vse_vindac",
+	
+    "ngcTooltip":"A captain of the renowned Void Interstellar Night Defense/Assault Corp within the Celaka system growing through the ranks.",
+    "rebelFleetSuffix":"Exiled",
+	
+    "specialForcesMaxFleets":4,
+	
+    "marketSpawnWeight":1.2,
+	
+	"useConfigRelationshipsInNonRandomSector": true,
+	
+    "morality":"good",
+	
+    "startRelationships":{
+		"hegemony": -0.4,
+		"independent": 0.6,
+		"luddic_church": -0.4,
+		"luddic_path": -0.9,
+		"persean": 0.3,
+        "pirates": -0.9,
+		"player": 1.0,
+		"sindrian_diktat":-0.2,	
+		"tritachyon": -0.1,
+		"vse_vindac": 1.0,
+	},
+	
+    "maxRelationships":{
+        "pirates": 0.0,
+        "hegemony": 0.0,
+		"vse_vindac": 1.0,
+		"player": 1.0,
+    },
+	
+    "diplomacyPositiveChance":{
+		"persean": 1.33,
+	},
+    "diplomacyNegativeChance":{
+		"luddic_church": 1.5,
+		"hegemony": 1.33,
+	},
+	
+    "alignments":{
+        "hierarchial":1,
+        "militarist":1,
+        "diplomatic":0.3,
+        "ideological":0.6,
+    },
+    "diplomacyTraits":["stalwart", "lowprofile", "law_and_order", "neutralist"],
+    
+    "colonyExpeditionChance":1,	# baseline expansion behaviour
+    #"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+	
+    "vengeanceLevelNames":["Wanted Alive", "Wanted Dead"],
+    "vengeanceFleetNames":["Bounty Hunters", "Blood Hunters"],
+    "vengeanceFleetNamesSingle":["a Bounty Hunter", "a Blood Hunter"],
+	
+    "startShipsSolo":[
+      # tutorial start
+      ["vindac_conquest_fs_Annihilator"],
+    ],
+    "startShipsCombatSmall":[
+		[]
+	],
+    "startShipsTradeSmall":[
+		[]
+	],
+    "startShipsCombatLarge":[
+		[],
+		[],
+		[],
+    ],
+    "startShipsTradeLarge":[
+		[]
+	],
+    "startShipsExplorerLarge":[
+		[]
+	],
+    "startShipsCarrierSmall":[
+		[]
+	],
+    "startShipsCarrierLarge":[
+		[]
+	],
+    "startShipsGrandFleet":[
+		[]
+	],
+	#"startShipsSuper":[["hyperion_Attack"]],
+    
+    "startSpecialItems":[
+        [], #["low_tech_package", ""], ["midline_package", ""], ["high_tech_package", ""], ["XIV_package", ""], ["missile_package", ""], 
+    ],
+	
+    "miningVariantsOrWings":[],
+	
+}

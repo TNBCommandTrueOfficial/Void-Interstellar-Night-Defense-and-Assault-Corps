@@ -1,1 +1,59 @@
 id,trigger,conditions,script,text,options,notes
+,,,,,,
+# VINDAC Faction fleet VINDAC_Greeting lines,,,,,,
+VINDAC_GreetingNoComms,OpenCommLink,"$faction.id ==vse_vindac
+$entity.ignorePlayerCommRequests score:10000","ShowDefaultVisual
+EndConversation NO_CONTINUE","You try to establish a comm link, but get only static.",,
+,,,,,,
+VINDAC_GreetingDefaultTOffNormal,OpenCommLink,"$faction.id == vse_vindac
+!$player.transponderOn
+$entity.relativeStrength >= 0",,"$PersonRank $personLastName looks alert. ""With the authority invested in me by $playerName of $theFaction, I command you to identify yourself or be on your way.""","turnOnTransponder:Turn your transponder on
+cutCommLink:Cut the comm link",
+,,,,,,
+VINDAC_GreetingDefaultTOffWeaker,OpenCommLink,"$faction.id == vse_vindac
+!$player.transponderOn
+$entity.relativeStrength < 0",,"$PersonRank $personLastName looks concerned. ""With the authority invested in me by $playerName of $theFaction, I request that you identify yourself or be on your way.""","turnOnTransponder:Turn your transponder on
+cutCommLink:Cut the comm link",
+,,,,,,
+VINDAC_GreetingDefaultTurnOnT,DialogOptionSelected,$option == turnOnTransponder,"ActivateAbility $player.fleetId transponder
+UpdateMemory
+FireBest OpenCommLink",You issue an order to activate the transponder and re-open the comm link.,,
+,,,,,,
+VINDAC_GreetingDefaultFriendlyNoAtrocity,OpenCommLink,"$faction.id == vse_vindac
+$player.atrocities < 2
+$player.transponderOn
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Acknowledging receipt of your codes, moving to a secure channel."" $PersonRank $personName briefly checks the monitor at $hisOrHer side, then: ""Yes? All is well I trust? Glad to hear it, $playerSirOrMadam. Over and out.""
+OR
+""Your $shipOrFleet has been scanned and identified, everything is in order. Burn bright, $playerSirOrMadam.""
+OR
+""Scanned and identified. You're flying pretty, $playerSirOrMadam. Clean jumps and high burn."" $PersonRank $personLastName signs off with a flash of the $faction sigil.""",,
+,,,,,,
+VINDAC_GreetingDefaultFriendlyAtrocity,OpenCommLink,"$faction.id == vse_vindac
+$player.atrocities > 1
+$player.transponderOn
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Acknowledging receipt of your codes, moving to a secure channel."" $PersonRank $personName nervously taps on a device at $hisOrHer side, then: ""All is well I trust? Glad to hear it, $playerSirOrMadam. Over and out.""
+OR
+""Your $shipOrFleet has been scanned and identified, everything is in order. Burn bright, $playerSirOrMadam.""
+OR
+""Scanned and identified. We read you loud and clear, $playerSirOrMadam. Clean jumps and high burn."" $PersonRank $personLastName quickly signs off with a flash of the $faction sigil.""",,
+,,,,,,
+VINDAC_GreetingDefaultInfamous,OpenCommLink,"$faction.id == vse_vindac,
+$player.atrocities > 1
+$player.transponderOn
+RollProbability 0.3 score:2",#$recognizedAsInfamous,"""You have been scanned and,"" $heOrShe blinks at $hisOrHer screen, then says almost - but not quite - under $hisOrHer breath, ""$playerName. The butcher."" 
+
+$HeOrShe straightens $hisOrHer back, ""We serve for the glory of $theFaction, $playerSirOrMadam. That much has always been true. ""
+
+""I just... I just hope it was worth it."" $PersonRank $personLastName looks off to the side wistfully before suddenly adopting a stoic expression. Whatever feelings $HeOrShe had just displayed, they've faded into obscurity behind the mask of a worn and tired soldier.",,
+,,,,,,
+,,,,,,
+#New Faction description,,,,,,
+VINDAC_CooperativeDescAttrocity,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == vse_vindac
+$player.atrocities > 1",,"As a renowned member of $theFactionLong, your influence within is unshakeable and you are as respected as you are feared. Throughout the Void Sakura Empire, glasses are raised in your name, though some prefer not to openly do so following some of the more questionable actions you have comitted in the sector.",,
+,,,,,,
+VINDAC_CooperativeDesc,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == vse_vindac
+$player.atrocities < 2",,"As a renowned member of $theFactionLong, your influence within is unshakeable. Throughout the Void Sakura Empire, glasses are raised in your name with pride and chanting.",,

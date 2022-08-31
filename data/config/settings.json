@@ -1,6 +1,7 @@
 {
-	"fogOfWarColor":[70,92,114,0],   # alpha channel of this color is not used
-	"enableUIStaticNoise":false,
+	#"enableUIStaticNoise":false,
+	#"noiseColor":[40,152,176,255],
+	
     # main color used for menu buttons and the like
 	"buttonBg":[184,15,10,255],
 	"buttonBgDark":[124,05,0,05],
@@ -8,7 +9,7 @@
 	"buttonShortcut":[200,200,200,255],
 	"storyOptionColor":[224,15,10,255],
 	"hColor":[184,15,10,255],  # highlight color, shorter version for use in reports.csv/rules.csv
-	"defaultFont":"graphics/fonts/insignia15LTaa.fnt",
+	#"defaultFont":"graphics/fonts/insignia15LTaa.fnt",
 
 	"mountYellowColor":[184,15,10,255],
 	"mountGreenColor":[184,15,10,255],
@@ -37,25 +38,11 @@
 	"widgetBorderColorBright":[255,179,0,255],
 	"standardUIIconColor":[184,15,10,255],
 	"tripadGridColor":[184,15,10,255],
-
-	"flatRedTextColor":[255,0,0,255],
-	"darkRedTextColor":[155,0,0,255],
-	"yellowTextColor":[255,215,0,255],
-	"darkYellowTextColor":[155,105,0,255],
-	"textFriendColor":[155,255,0,255],
-	"textEnemyColor":[255,100,0,255],
-	"textNeutralColor":[70,200,255,255],
-	"textGrayColor":[175,175,175,155],
-	"marketFlavorTextColor":[180,180,180,255],
-	#"standardTextColor":[235,235,235,255],
-	"standardTextColor":[220,220,220,255],
 	
 	"weaponArcColor":[255,0,0,102],
 	"weaponArcFFColor":[255,100,0,255],
-	"iconFriendColor":[155,255,0,255],
-	"iconEnemyColor":[255,0,0,255],
-	"iconNeutralShipColor":[75,75,75,255],
-	"iconWaypointColor":[50,150,255,255],
+	
+	#"iconFriendColor":[155,255,0,255],
 	
 	"standardGridColor":[255,23,0,75],
 	
@@ -95,38 +82,41 @@
 		"backgrounds":{
 			"celakaBackground":"graphics/VNC/backgrounds/celaka_background.jpg",
 		},
-		#"illustrations":{
-		#	"space_bar":"graphics/illustrations/space_bar.jpg",
-		#},
+		"illustrations":{
+			"abandoned_station_orbit":"graphics/VNC/illustrations/abandoned_station_orbit.jpg",
+		},
 		"fx":{
 			"tnb_warp_effect":"graphics/VNC/fx/tnb_warp_effect.png",
 			"tnb_warp_enter":"graphics/VNC/fx/tnb_warp_enterexit.png",
 			"tnb_warp_exit":"graphics/VNC/fx/tnb_warp_enterexit.png",
 		},
 		"planets":{
-			"ssmod_mercury": "graphics/VNC/planets/ssmod_mercury.jpg",
-			"ssmod_venus": "graphics/VNC/planets/ssmod_venus.jpg",
-			"ssmod_terra": "graphics/VNC/planets/ssmod_terra.jpg",
-			"ssmod_mars": "graphics/VNC/planets/ssmod_mars.jpg",
-			"ssmod_ceres": "graphics/VNC/planets/ssmod_ceres.jpg",
-			"ssmod_jupiter": "graphics/VNC/planets/ssmod_jupiter.jpg",
-			"ssmod_saturn": "graphics/VNC/planets/ssmod_saturn.jpg",
-			"ssmod_uranus": "graphics/VNC/planets/ssmod_uranus.jpg",
-			"ssmod_neptune": "graphics/VNC/planets/ssmod_neptune.jpg",
-			"ssmod_pluto": "graphics/VNC/planets/ssmod_pluto.jpg",
-			"atmosphere":"graphics/planets/atmosphere.png",  # used if atmosphereAbove=false
-			"atmosphere2":"graphics/planets/atmosphere2.png", # used atmosphereAbove=true
-			"default_sun_halo":"graphics/planets/sun_halo.png", # default halo that's rendered on top of stars
-			"frozen00":"graphics/planets/frozen00.jpg",
-			"frozen01":"graphics/planets/frozen01.jpg",
-			"frozen02":"graphics/planets/frozen02.jpg",
-			"castiron":"graphics/planets/castiron.jpg",
-			"barren03":"graphics/planets/barren03.jpg",
-			"barren02":"graphics/planets/barren02.jpg",
-			"venuslike":"graphics/planets/venuslike.jpg",
-			"terran_eccentric":"graphics/planets/terran_eccentric.jpg",
-			"desert01":"graphics/planets/desert01.jpg",
-			#"bread":"graphics/planets/bread.png",
+			#"ssmod_mercury": "graphics/VNC/planets/ssmod_mercury.jpg",
+			#"ssmod_venus": "graphics/VNC/planets/ssmod_venus.jpg",
+			#"ssmod_terra": "graphics/VNC/planets/ssmod_terra.jpg",
+			#"ssmod_mars": "graphics/VNC/planets/ssmod_mars.jpg",
+			#"ssmod_ceres": "graphics/VNC/planets/ssmod_ceres.jpg",
+			#"ssmod_jupiter": "graphics/VNC/planets/ssmod_jupiter.jpg",
+			#"ssmod_saturn": "graphics/VNC/planets/ssmod_saturn.jpg",
+			#"ssmod_uranus": "graphics/VNC/planets/ssmod_uranus.jpg",
+			#"ssmod_neptune": "graphics/VNC/planets/ssmod_neptune.jpg",
+			#"ssmod_pluto": "graphics/VNC/planets/ssmod_pluto.jpg",
+			"vnc_alpine": "graphics/VNC/planets/vnc_alpine.jpg",
+			"vnc_gaseous00": "graphics/VNC/planets/vnc_gaseous00.jpg",
+			"vnc_gaseous01": "graphics/VNC/planets/vnc_gaseous01.jpg",
+			"vnc_gaseous02": "graphics/VNC/planets/vnc_gaseous02.jpg",
+			"vnc_gaseous03": "graphics/VNC/planets/vnc_gaseous03.jpg", #vnc_gaseous03
+			"vnc_icy": "graphics/VNC/planets/vnc_icy.jpg",
+			"vnc_martian": "graphics/VNC/planets/vnc_martian.jpg",
+			"vnc_savannah": "graphics/VNC/planets/vnc_savannah.jpg",
+			"vnc_swamp": "graphics/VNC/planets/vnc_swamp.jpg",
+			"vnc_terrestrial00": "graphics/VNC/planets/vnc_terrestrial00.jpg",
+			"vnc_terrestrial01": "graphics/VNC/planets/vnc_terrestrial01.jpg",
+			"vnc_terrestrial02": "graphics/VNC/planets/vnc_terrestrial02.jpg",
+			"vnc_terrestrial03": "graphics/VNC/planets/vnc_terrestrial03.jpg",
+			"vnc_tropical": "graphics/VNC/planets/vnc_tropical.jpg",
+			"vnc_venusian": "graphics/VNC/planets/vnc_venusian.jpg",
+			"vnc_volcanic": "graphics/VNC/planets/vnc_volcanic.jpg",
 		},
 		"moons":{
 		"ssmod_luna": "graphics/VNC/moons/ssmod_luna.jpg",

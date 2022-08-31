@@ -1,0 +1,113 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="charge_drive_activateTNB_V2_data" version="1.3.0" audacityversion="2.3.2" sel0="0.0000000000" sel1="3.0000000000" vpos="64" h="0.0000000000" zoom="257.5953869772" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="encoder" value="Lavc58.134.100 libvorbis"/>
+		<tag name="TITLE" value="Hyperdrive Sound Effect"/>
+		<tag name="ARTIST" value="Marvin Megavolt"/>
+	</tags>
+	<wavetrack name="charge_drive_activateTNB" channel="0" linked="1" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="209995">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086f1.au" len="209995" min="-0.420247" max="0.455706" rms="0.089489"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="charge_drive_activateTNB" channel="1" linked="0" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="209995">
+				<waveblock start="0">
+					<simpleblockfile filename="e08088dd.au" len="209995" min="-0.580598" max="0.487214" rms="0.097509"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="315924__profmegavolt__hyperdrive-sound-effect-2" channel="0" linked="1" mute="0" solo="1" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="132300">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086cb.au" len="132300" min="-1.101596" max="1.113822" rms="0.506405"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="315924__profmegavolt__hyperdrive-sound-effect-2" channel="1" linked="0" mute="0" solo="1" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="132300">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808fad.au" len="132300" min="-1.106323" max="1.10739" rms="0.51532"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="315924__profmegavolt__hyperdrive-sound-effect-2" channel="0" linked="1" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="401247">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e83.au" len="159230" min="-1.0" max="0.999664" rms="0.277413"/>
+				</waveblock>
+				<waveblock start="159230">
+					<simpleblockfile filename="e0808856.au" len="159701" min="-1.0" max="0.998596" rms="0.270514"/>
+				</waveblock>
+				<waveblock start="318931">
+					<simpleblockfile filename="e0808e36.au" len="82316" min="-1.0" max="0.932922" rms="0.256546"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="315924__profmegavolt__hyperdrive-sound-effect-2" channel="1" linked="0" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="401247">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808768.au" len="159230" min="-1.0" max="0.999969" rms="0.265863"/>
+				</waveblock>
+				<waveblock start="159230">
+					<simpleblockfile filename="e0808622.au" len="159701" min="-1.0" max="0.839844" rms="0.260339"/>
+				</waveblock>
+				<waveblock start="318931">
+					<simpleblockfile filename="e0808287.au" len="82316" min="-1.0" max="0.805267" rms="0.251576"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="315924__profmegavolt__hyperdrive-sound-effect-2" channel="0" linked="1" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="333196">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808aa8.au" len="129" min="-0.312256" max="0.099609" rms="0.180131"/>
+				</waveblock>
+				<waveblock start="129">
+					<simpleblockfile filename="e08087f2.au" len="179828" min="-1.0" max="0.999969" rms="0.297573"/>
+				</waveblock>
+				<waveblock start="179957">
+					<simpleblockfile filename="e08088c3.au" len="153239" min="-0.010773" max="0.013733" rms="0.001841"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="315924__profmegavolt__hyperdrive-sound-effect-2" channel="1" linked="0" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="333196">
+				<waveblock start="0">
+					<simpleblockfile filename="e080806e.au" len="129" min="-0.234863" max="0.217896" rms="0.133902"/>
+				</waveblock>
+				<waveblock start="129">
+					<simpleblockfile filename="e0808245.au" len="179828" min="-1.0" max="0.999969" rms="0.301583"/>
+				</waveblock>
+				<waveblock start="179957">
+					<simpleblockfile filename="e0808284.au" len="153239" min="-0.017212" max="0.011169" rms="0.002047"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
