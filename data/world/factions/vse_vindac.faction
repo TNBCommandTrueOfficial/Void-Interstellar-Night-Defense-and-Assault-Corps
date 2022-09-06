@@ -165,11 +165,11 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
 		"hulls":[],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -264,11 +264,11 @@
 		"allowsTransponderOffTrade":false,
 		"offersCommissions":true,
 		"engagesInHostilities":true,
-		"buysAICores":false,
+		"buysAICores":true,
 		"buysSurveyData":true,
         "postsNoBounties":false,
         "fightToTheLast":false, # order a full assault instead of retreating, in most cases
-        "caresAboutAtrocities":false,
+        "caresAboutAtrocities":true,
 		"punitiveExpeditionData":{
 			"vsCompetitors":false,
 			"vsFreePort":false,

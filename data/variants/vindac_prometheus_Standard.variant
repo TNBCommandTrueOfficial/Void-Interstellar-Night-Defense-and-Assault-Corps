@@ -1,0 +1,45 @@
+{
+  "displayName": "Super",
+  "fluxCapacitors": 0,
+  "fluxVents": 21,
+  "goalVariant": true,
+  "hullId": "vindac_prometheus",
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_prometheus_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "railgun",
+        "WS0003": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "railgun",
+        "WS 006": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightdualmg",
+        "WS 003": "dualflak",
+        "WS 005": "lightdualmg",
+        "WS 007": "lightdualmg",
+        "WS0001": "lightdualmg",
+        "WS0002": "flak"
+      }
+    }
+  ],
+  "wings": []
+}

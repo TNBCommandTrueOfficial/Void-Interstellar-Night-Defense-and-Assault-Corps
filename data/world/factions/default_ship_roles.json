@@ -1,0 +1,89 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		
+		"vindac_shepherd_Standard":10,
+		#"vindac_gremlin_Standard":10,
+		#"vindac_hammerhead_Standard":10,
+		#"vindac_hound_Standard":10,
+		#"vindac_kite_Standard":10,
+		#"vindac_condor_Standard":10,
+		#"vindac_eagle_Assault":10,
+		"vindac_dram_Standard":10,
+		
+		# a bit annoying to fight with a really small or weak fleet - not as much so as a centurion, but close enough
+		#"vanguard_Attack":5,
+		#"vanguard_Strike":5,
+		#"vanguard_pirates_Attack":5,
+		#"vanguard_pirates_Strike":5,
+		
+		"fallback":{"combatSmall":1},
+	},
+	"combatSmall":{
+		
+		"vindac_shepherd_Standard":10,
+		"vindac_gremlin_Standard":10,
+		"vindac_hammerhead_Standard":10,
+		"vindac_hound_Standard":10,
+		"vindac_kite_Standard":10,
+		"vindac_condor_Standard":10,
+		"vindac_eagle_Assault":10,
+		"vindac_dram_Standard":10,
+		
+		
+		"fallback":{"combatMedium":0.5},
+	},
+	"combatMedium":{
+		"vindac_kite_Standard":10,
+		"vindac_gremlin_Standard":10,
+		"vindac_hammerhead_Standard":10,
+		"vindac_condor_Standard":10,
+		"vindac_falcon_Standard":10,
+		"vindac_venture_Balanced":10,
+		"vindac_shepherd_Standard":10,
+		"vindac_buffalo_Standard":10,
+		"vindac_phaeton_Standard":10,
+		
+		"fallback":{"combatSmall":1},
+	},
+	"combatLarge":{
+		"vindac_kite_Standard":10,
+		"vindac_gremlin_Standard":10,
+		"vindac_hammerhead_Standard":10,
+		"vindac_condor_Standard":10,
+		"vindac_venture_Balanced":10,
+		"vindac_falcon_Standard":10,
+		"vindac_eagle_Assault":10,
+		"vindac_conquest_Standard":10,
+		"vindac_buffalo_Standard":10,
+		"vindac_colossus_Standard":10,
+		"vindac_prometheus_Standard":10,
+		
+		
+		"fallback":{"combatMedium":1},
+	},	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterLarge":{
+		"vindac_hammerhead_Standard":10,
+		"vindac_venture_Balanced":10,
+		"vindac_falcon_Standard":10,
+		"vindac_eagle_Assault":10,
+		"vindac_shepherd_Standard":10,
+		"vindac_mule_Standard":10,
+		"vindac_buffalo_Standard":10,
+		"vindac_colossus_Standard":10,
+		"fallback":{"combatFreighterMedium":1},
+	},
+	
+	"civilianRandom":{
+		"vindac_kite_Standard":10,
+		"vindac_shepherd_Standard":10,
+		"vindac_hammerhead_Standard":10,
+		"vindac_venture_Balanced":10,
+		"vindac_buffalo_Standard":10,
+		"vindac_dram_Standard":10,
+	},
+	
+}

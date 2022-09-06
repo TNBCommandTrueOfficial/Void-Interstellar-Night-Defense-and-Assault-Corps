@@ -1,0 +1,27 @@
+{
+  "variantId": "colossus_green",
+  "hullId": "colossus_green",
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "insulatedengine",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmg",
+        "WS 002": "lightmg",
+        "WS 003": "lightmg",
+        "WS 004": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

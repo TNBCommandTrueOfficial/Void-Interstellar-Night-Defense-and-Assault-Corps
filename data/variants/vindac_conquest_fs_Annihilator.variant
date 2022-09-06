@@ -3,12 +3,14 @@
   "hullId": "vindac_conquest_fs",
   "displayName": "Annihilator",
   "goalVariant": true,
-  "fluxCapacitors": 50,
-  "fluxVents": 25,
+  "fluxCapacitors": 37,
+  "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "fluxdistributor"
+    "fluxdistributor",
+    "missleracks",
+    "fluxbreakers"
   ],
   "weaponGroups": [
     {

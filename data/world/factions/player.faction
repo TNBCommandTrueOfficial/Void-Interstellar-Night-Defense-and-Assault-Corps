@@ -1,4 +1,19 @@
 {
 	"id":"player",
-    "showInIntelTab":true,
+	"portraits":{
+		"standard_male":[
+			"graphics/VNC/portraits/vnc_male01.png",
+			"graphics/VNC/portraits/vnc_male02.png",
+			"graphics/VNC/portraits/vnc_male03.png",
+			"graphics/VNC/portraits/vnc_merc01.png",
+			"graphics/VNC/portraits/vnc_hunter01.png",
+
+		],
+		"standard_female":[
+			"graphics/VNC/portraits/vnc_female01.png",
+			"graphics/VNC/portraits/vnc_female02.png",
+			"graphics/VNC/portraits/vnc_female03.png",
+			"graphics/VNC/portraits/vnc_female04.png",
+		],
+	},
 }

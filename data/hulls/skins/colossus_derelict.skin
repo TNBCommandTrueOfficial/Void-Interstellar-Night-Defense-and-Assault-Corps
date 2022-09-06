@@ -1,0 +1,11 @@
+{
+  "baseHullId": "colossus",
+  "baseValueMult": 1,
+  "descriptionId": "colossus",
+  "descriptionPrefix": "A derelict colossus refitted for use after having been found in the sector.",
+  "hullDesignation": "Heavy Freighter",
+  "hullName": "Colossus",
+  "restoreToBaseHull": false,
+  "skinHullId": "colossus_derelict",
+  "spriteName": "graphics/VNC/ships/colossus/colossusderelict.png"
+}

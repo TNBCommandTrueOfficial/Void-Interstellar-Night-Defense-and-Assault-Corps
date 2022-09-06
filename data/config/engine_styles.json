@@ -1,0 +1,31 @@
+{
+	"NCE1":{
+		"engineColor":[205,0,0,80],
+		"contrailParticleSizeMult":2,
+		"contrailParticleDuration":0.6,
+		"contrailParticleFinalSizeMult":2.5,
+		"contrailMaxSpeedMult":0.3,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[220,0,0,50],
+		"type":"GLOW"
+	},
+	"NCE2":{
+		"engineColor":[160,0,0,20],
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[160,20,20,15],
+		"type":"SMOKE"
+	},
+	"NCE3":{
+		"engineColor":[255, 31, 31,100],	#160,0,0 	255, 75, 75
+		"contrailParticleSizeMult":1,	#1
+		"contrailParticleDuration":0.4,	#0.4
+		"contrailParticleFinalSizeMult":2.5,
+		"contrailMaxSpeedMult":4,		#4
+		"contrailAngularVelocityMult":0,#0
+		"contrailColor":[100,20,20,150],
+		"type":"GLOW"
+	},
+}

@@ -1,0 +1,21 @@
+{
+  "displayName": "Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "vindac_cobra",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "vindac_cobra_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "reaper"
+      }
+    }
+  ],
+  "wings": []
+}

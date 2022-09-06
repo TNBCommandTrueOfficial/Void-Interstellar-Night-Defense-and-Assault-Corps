@@ -1,0 +1,224 @@
+{
+  "bounds": [
+    -37,
+    53,
+    -2.5,
+    41.5,
+    10,
+    33,
+    36,
+    29,
+    39.5,
+    23.5,
+    70.5,
+    10,
+    76.5,
+    -0,
+    71,
+    -9,
+    65,
+    -15.5,
+    57.5,
+    -27,
+    28.5,
+    -33.5,
+    17.5,
+    -30.5,
+    -11.5,
+    -32,
+    -27,
+    -34.5,
+    -31.5,
+    -29.5,
+    -43.5,
+    -24.5,
+    -63.5,
+    -24.5,
+    -67.5,
+    -19,
+    -67.5,
+    23.5
+  ],
+  "builtInMods": [
+    "NcEngineering"
+  ],
+  "builtInWeapons": {
+    "WS0001": "blinker_red",
+    "WS0002": "blinker_red"
+  },
+  "builtInWings": [],
+  "center": [
+    53.5,
+    72.5
+  ],
+  "collisionRadius": 87,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 42,
+      "location": [
+        -70,
+        15.5
+      ],
+      "style": "NCE3",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 42,
+      "location": [
+        -69,
+        -5.5
+      ],
+      "style": "NCE3",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 42,
+      "location": [
+        -69,
+        6.5
+      ],
+      "style": "NCE3",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 42,
+      "location": [
+        -70,
+        -14.5
+      ],
+      "style": "NCE3",
+      "width": 12
+    }
+  ],
+  "height": 150,
+  "hullId": "vindac_calypso",
+  "hullName": "VINDAC Calypso",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    1,
+    0
+  ],
+  "shieldRadius": 79.5,
+  "spriteName": "graphics/VNC/ships/vindac_calypso.png",
+  "style": "NITE_CORP",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 275,
+      "id": "WS001",
+      "locations": [
+        40.5,
+        -2.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS002",
+      "locations": [
+        14.5,
+        18.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -45,
+      "arc": 280,
+      "id": "WS005",
+      "locations": [
+        3.5,
+        -13.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 180,
+      "arc": 200,
+      "id": "WS004",
+      "locations": [
+        -45.5,
+        0.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 220,
+      "id": "WS003",
+      "locations": [
+        -27.5,
+        38.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS006",
+      "locations": [
+        65.5,
+        -12.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS007",
+      "locations": [
+        35.5,
+        27.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        71,
+        7
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        71,
+        -6
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 88
+}

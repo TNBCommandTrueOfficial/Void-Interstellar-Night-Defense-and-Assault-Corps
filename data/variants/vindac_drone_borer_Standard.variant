@@ -1,0 +1,22 @@
+{
+  "displayName": "Drone\r",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "vindac_drone_borer",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_drone_borer_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "mininglaser",
+        "WS 002": "mininglaser"
+      }
+    }
+  ],
+  "wings": []
+}

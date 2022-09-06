@@ -1,0 +1,115 @@
+{
+  "bounds": [
+    -8,
+    12,
+    17,
+    0,
+    -8,
+    -12,
+    -13,
+    0
+  ],
+  "builtInWings": [],
+  "center": [
+    15,
+    16
+  ],
+  "collisionRadius": 30,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 16,
+      "location": [
+        -14,
+        8
+      ],
+      "style": "NCE3",
+      "width": 4
+    },
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 16,
+      "location": [
+        -14,
+        -8
+      ],
+      "style": "NCE3",
+      "width": 4
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 25,
+      "location": [
+        -12,
+        3
+      ],
+      "style": "NCE3",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 25,
+      "location": [
+        -12,
+        -3
+      ],
+      "style": "NCE3",
+      "width": 6
+    }
+  ],
+  "height": 33,
+  "hullId": "vindac_storm_harasser",
+  "hullName": "VINDAC Storm - Harasser",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 22,
+  "spriteName": "graphics/VNC/ships/vindac_storm_harasser.png",
+  "style": "NITE_CORP",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 001",
+      "locations": [
+        8.5,
+        8.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 002",
+      "locations": [
+        8.5,
+        -8.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 5,
+      "id": "WS 005",
+      "locations": [
+        -6,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 30
+}

@@ -6,7 +6,7 @@
 	"buttonBg":[184,15,10,255],
 	"buttonBgDark":[124,05,0,05],
 	"buttonText":[146,0,0,255],
-	"buttonShortcut":[200,200,200,255],
+	"buttonShortcut":[199, 54, 57,255],
 	"storyOptionColor":[224,15,10,255],
 	"hColor":[184,15,10,255],  # highlight color, shorter version for use in reports.csv/rules.csv
 	#"defaultFont":"graphics/fonts/insignia15LTaa.fnt",

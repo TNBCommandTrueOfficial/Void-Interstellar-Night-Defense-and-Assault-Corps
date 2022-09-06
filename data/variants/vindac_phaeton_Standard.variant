@@ -1,0 +1,27 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "vindac_phaeton",
+  "hullMods": [
+    "heavyarmor"
+  ],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "vindac_phaeton_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightdualmg",
+        "WS 002": "lightdualmg",
+        "WS 003": "lightdualmg",
+        "WS 004": "lightdualmg",
+        "WS0001": "lightdualmg"
+      }
+    }
+  ],
+  "wings": []
+}

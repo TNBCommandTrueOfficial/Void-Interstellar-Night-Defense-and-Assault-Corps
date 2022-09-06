@@ -1,0 +1,79 @@
+{
+  "displayName": "Elite Assault",
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "goalVariant": true,
+  "hullId": "vindac_conquest_fs",
+  "hullMods": [
+    "targetingunit",
+    "blast_doors"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_conquest_fs_Assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "hurricane",
+        "WS 002": "squall"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 019": "swarmer_fighter",
+        "WS 020": "swarmer_fighter",
+        "WS0001": "swarmer_fighter",
+        "WS0002": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "mjolnir",
+        "WS 012": "mjolnir",
+        "WS 022": "ionpulser",
+        "WS0004": "irpulse",
+        "WS0006": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 013": "mjolnir",
+        "WS 014": "mjolnir",
+        "WS 023": "ionpulser",
+        "WS0003": "irpulse",
+        "WS0005": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lrpdlaser",
+        "WS 004": "lrpdlaser",
+        "WS 005": "lrpdlaser",
+        "WS 006": "lrpdlaser",
+        "WS 007": "lrpdlaser",
+        "WS 008": "lrpdlaser",
+        "WS 009": "lrpdlaser",
+        "WS 010": "lrpdlaser",
+        "WS 015": "flak",
+        "WS 016": "flak",
+        "WS 017": "flak",
+        "WS 018": "flak"
+      }
+    }
+  ],
+  "wings": [
+    "vindac_storm_harasser_wing",
+    "vindac_storm_special_wing",
+    "vindac_shiv_wing"
+  ]
+}

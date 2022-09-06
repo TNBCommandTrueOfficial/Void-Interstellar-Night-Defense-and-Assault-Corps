@@ -51,7 +51,9 @@
         "diplomatic":0.3,
         "ideological":0.6,
     },
-    "diplomacyTraits":["stalwart", "lowprofile", "law_and_order", "neutralist"],
+	
+	# factionTraits.json 
+    "diplomacyTraits":["pacifist", "helps_allies", "irredentist", "stalwart", "lowprofile", "law_and_order", "neutralist", "devious", ],
     
     "colonyExpeditionChance":1,	# baseline expansion behaviour
     #"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
@@ -61,34 +63,39 @@
     "vengeanceFleetNamesSingle":["a Bounty Hunter", "a Blood Hunter"],
 	
     "startShipsSolo":[
+      ["swp_alastor_sta"],
+      ["vindac_hammerhead_Standard"],
       # tutorial start
-      ["vindac_conquest_fs_Annihilator"],
+      ["vindac_wolf_Standard", "vindac_kite_Standard"],
+      ["vindac_wolf_Standard", "vindac_shepherd_Standard"],
+      ["vindac_mule_Standard", "vindac_kite_Standard"],
+      ["vindac_mule_Standard", "vindac_shepherd_Standard"],
     ],
     "startShipsCombatSmall":[
-		[]
+		["vindac_hammerhead_Standard", "vindac_wolf_Standard", "vindac_kite_Standard"]
 	],
     "startShipsTradeSmall":[
-		[]
+		["vindac_mule_Standard", "vindac_hound_Standard", "vindac_kite_Standard"]
 	],
     "startShipsCombatLarge":[
-		[],
-		[],
-		[],
+		["swp_vulture_sta", "swp_striker_ass", "wolf_Assault"],
+		["vindac_eagle_Assault", "vindac_hammerhead_Standard", "vindac_brawler_Standard"],
+		["vindac_eagle_Assault", "vindac_falcon_Standard", "vindac_hammerhead_Standard", "vindac_vigilance_Standard"],
     ],
     "startShipsTradeLarge":[
-		[]
+		["vindac_colossus_Standard", "vindac_mule_Standard", "vindac_shepherd_Standard"]
 	],
     "startShipsExplorerLarge":[
-		[]
+		["vindac_venture_Balanced", "vindac_buffalo_Standard", "vindac_shepherd_Standard"]
 	],
     "startShipsCarrierSmall":[
-		[]
+		["vindac_condor_Standard", "vindac_wolf_Standard", "vindac_vigilance_Standard"]
 	],
     "startShipsCarrierLarge":[
-		[]
+		["vindac_conquest_Standard", "vindac_heron_Standard", "vindac_hammerhead_Standard", "vindac_brawler_Standard"]
 	],
     "startShipsGrandFleet":[
-		[]
+		["vindac_conquest_Standard", "vindac_conquest_fs_Annihilator", "vindac_heron_Standard", "vindac_eagle_Assault", "vindac_falcon_Standard", "vindac_hammerhead_v2_Standard", "vindac_brawler_Standard", "vindac_condor_Standard", "vindac_vigilance_Standard", "vindac_kite_Standard", "vindac_kite_Standard"]
 	],
 	#"startShipsSuper":[["hyperion_Attack"]],
     
