@@ -1,0 +1,18 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+Nite Corp Engineering,NcEngineering,,,Nite Corp,"defensive, shields, special, vindac_bp","Requires Dock, Defenses, Shields, Special",,TRUE,TRUE,,0,0,0,0,tnb.vndac.data.hullmods.NcEngineering,"This ship has been altered to live up to VINDAC's standards for ships. Seeing upgrades to the shields by their turn rate, rate the shields can be raised, and the shield's coverage, a reinforced hull to increase integrity and keep our brothers and sisters safe in battle, as well as having proper trained mechanics to increase the ships operating time. Anything to give VINDAC ships that extra edge in battle.
+
+- Increases the turn rate of the ship's shields by %s and the rate at which the shields are raised by %s.
+
+- Installs additional hermetic and heavily reinforced doors at critical junctures throughout the ship. Increases hull integrity by %s.
+- Ship takes %s fewer crew casualties from hull damage sustained in combat.
+
+- Increases peak operating time for ships that suffer degraded performance from extended deployment by %s. 
+- Reduces the rate at which combat readiness degrades by %s.
+
+- Increases the shield's coverage by %s degrees.","Increases shield turn rate and extension speed.
+
+Increases hull integrity, reduces crew casualties.
+
+Increases peak time, CR degrades more slowly.
+
+Increases maximum shield arc.",graphics\VNC\hullmods\NiteCorpEngineering.png

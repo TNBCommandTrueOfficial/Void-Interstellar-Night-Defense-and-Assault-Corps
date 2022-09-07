@@ -11,6 +11,7 @@
 	
     "specialForcesMaxFleets":4,
 	
+    "stabilizeCommodities":["food", "hand_weapons", "supplies", "marines"],
     "marketSpawnWeight":1.2,
 	
 	"useConfigRelationshipsInNonRandomSector": true,
@@ -24,17 +25,13 @@
 		"luddic_path": -0.9,
 		"persean": 0.3,
         "pirates": -0.9,
-		"player": 1.0,
 		"sindrian_diktat":-0.2,	
 		"tritachyon": -0.1,
-		"vse_vindac": 1.0,
 	},
 	
     "maxRelationships":{
         "pirates": 0.0,
         "hegemony": 0.0,
-		"vse_vindac": 1.0,
-		"player": 1.0,
     },
 	
     "diplomacyPositiveChance":{
@@ -48,47 +45,71 @@
     "alignments":{
         "hierarchial":1,
         "militarist":1,
-        "diplomatic":0.3,
+        "diplomatic":0.5,
         "ideological":0.6,
+        "technocratic":0.6
     },
-    "diplomacyTraits":["stalwart", "lowprofile", "law_and_order", "neutralist"],
+	
+	# factionTraits.json 
+    "diplomacyTraits":["pacifist", "helps_allies", "irredentist", "stalwart", "lowprofile", "law_and_order", "neutralist", "devious", ],
     
     "colonyExpeditionChance":1,	# baseline expansion behaviour
-    #"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
 	
-    "vengeanceLevelNames":["Wanted Alive", "Wanted Dead"],
-    "vengeanceFleetNames":["Bounty Hunters", "Blood Hunters"],
-    "vengeanceFleetNamesSingle":["a Bounty Hunter", "a Blood Hunter"],
+    "factionIdForHqResponse":"vse_vindac_514th",
+	
+    "asteroidMiningFleetName":"Mining Flotilla",
+    "gasMiningFleetName":"Gas Mining Flotilla",
+    "invasionFleetName":"Annexation Armada",
+    "responseFleetName":"VNC Planetary Shadow Force",
+    "invasionSupportFleetName":"Support Battalion",
+    "defenceFleetName":"VNC Shield Squad Armada",
+	
+    #"invasionFleetSizeMod":0.1,
+	#"responseFleetSizeMod":0.7,
+	#"invasionPointMult":0.7,
+	
+	"vengeanceFleetSizeMult":1.1,
+    "vengeanceLevelNames":["Wanted Alive", "Wanted Dead or Alive", "Wanted Dead"],
+    "vengeanceFleetNames":["VNC Seekers", "VNC Hunters", "Shield Squad Venators"],
+    "vengeanceFleetNamesSingle":["a VNC Seeker fleet", "a VNC Hunter fleet", "a Shield Squad Venator fleet"],
+	
+	"specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
 	
     "startShipsSolo":[
+      ["swp_alastor_sta"],
+      ["vindac_hammerhead_Standard"],
       # tutorial start
-      ["vindac_conquest_fs_Annihilator"],
+      ["vindac_wolf_Standard", "vindac_kite_Standard"],
+      ["vindac_wolf_Standard", "vindac_shepherd_Standard"],
+      ["vindac_mule_Standard", "vindac_kite_Standard"],
+      ["vindac_mule_Standard", "vindac_shepherd_Standard"],
     ],
     "startShipsCombatSmall":[
-		[]
+		["vindac_hammerhead_Standard", "vindac_wolf_Standard", "vindac_kite_Standard"]
 	],
     "startShipsTradeSmall":[
-		[]
+		["vindac_mule_Standard", "vindac_hound_Standard", "vindac_kite_Standard"]
 	],
     "startShipsCombatLarge":[
-		[],
-		[],
-		[],
+		["swp_vulture_sta", "swp_striker_ass", "wolf_Assault"],
+		["vindac_eagle_Assault", "vindac_hammerhead_Standard", "vindac_brawler_Standard"],
+		["vindac_eagle_Assault", "vindac_falcon_Standard", "vindac_hammerhead_Standard", "vindac_vigilance_Standard"],
     ],
     "startShipsTradeLarge":[
-		[]
+		["vindac_colossus_Standard", "vindac_mule_Standard", "vindac_shepherd_Standard"]
 	],
     "startShipsExplorerLarge":[
-		[]
+		["vindac_venture_Balanced", "vindac_buffalo_Standard", "vindac_shepherd_Standard"]
 	],
     "startShipsCarrierSmall":[
-		[]
+		["vindac_condor_Standard", "vindac_wolf_Standard", "vindac_vigilance_Standard"]
 	],
     "startShipsCarrierLarge":[
-		[]
+		["vindac_conquest_Standard", "vindac_heron_Standard", "vindac_hammerhead_Standard", "vindac_brawler_Standard"]
 	],
     "startShipsGrandFleet":[
-		[]
+		["vindac_conquest_Standard", "vindac_conquest_fs_Annihilator", "vindac_heron_Standard", "vindac_eagle_Assault", "vindac_falcon_Standard", "vindac_hammerhead_v2_Standard", "vindac_brawler_Standard", "vindac_condor_Standard", "vindac_vigilance_Standard", "vindac_kite_Standard", "vindac_kite_Standard"]
 	],
 	#"startShipsSuper":[["hyperion_Attack"]],
     

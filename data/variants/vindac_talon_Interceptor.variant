@@ -1,0 +1,28 @@
+{
+  "displayName": "Interceptor",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "vindac_talon",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_talon_Interceptor",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "swarmer_fighter"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,45 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "vindac_calypso",
+  "hullMods": [
+    "blast_doors"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_calypso_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS001": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS002": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS005": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS003": "vulcan",
+        "WS004": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

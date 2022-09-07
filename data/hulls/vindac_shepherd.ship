@@ -1,0 +1,149 @@
+{
+  "bounds": [
+    34,
+    28,
+    32,
+    -28,
+    -31,
+    -27,
+    -32,
+    26
+  ],
+  "builtInMods": [
+    "civgrade",
+    "NcEngineering",
+    "surveying_equipment",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "vindac_drone_borer_wing"
+  ],
+  "center": [
+    39,
+    45
+  ],
+  "collisionRadius": 70,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -40,
+        20
+      ],
+      "style": "NCE3",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -40,
+        -19
+      ],
+      "style": "NCE3",
+      "width": 16
+    },
+    {
+      "angle": 140,
+      "contrailSize": 128,
+      "length": 4,
+      "location": [
+        -22,
+        35
+      ],
+      "style": "LOW_TECH",
+      "width": 2
+    },
+    {
+      "angle": 145,
+      "contrailSize": 128,
+      "length": 4,
+      "location": [
+        -30,
+        33
+      ],
+      "style": "LOW_TECH",
+      "width": 3
+    },
+    {
+      "angle": 220,
+      "contrailSize": 128,
+      "length": 4,
+      "location": [
+        -22,
+        -33
+      ],
+      "style": "LOW_TECH",
+      "width": 2
+    },
+    {
+      "angle": 215,
+      "contrailSize": 128,
+      "length": 4,
+      "location": [
+        -30,
+        -32
+      ],
+      "style": "LOW_TECH",
+      "width": 3
+    }
+  ],
+  "height": 92,
+  "hullId": "vindac_shepherd",
+  "hullName": "VINDAC Shepherd",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    1,
+    0
+  ],
+  "shieldRadius": 70,
+  "spriteName": "graphics/VNC/ships/vindac_drone_tender.png",
+  "style": "NITE_CORP",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -75,
+      "arc": 200,
+      "id": "WS 007",
+      "locations": [
+        -3,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 20,
+      "id": "WS 008",
+      "locations": [
+        27,
+        -19
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 003",
+      "locations": [
+        -3,
+        19,
+        12,
+        19,
+        26,
+        19
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 78
+}

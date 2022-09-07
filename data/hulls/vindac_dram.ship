@@ -1,0 +1,189 @@
+{
+  "bounds": [
+    -3,
+    38,
+    1,
+    27,
+    42,
+    27,
+    43,
+    37,
+    77,
+    38,
+    80,
+    -4,
+    69,
+    -15,
+    68,
+    -32,
+    53,
+    -33,
+    41,
+    -25,
+    3,
+    -24,
+    2,
+    -37,
+    -27,
+    -36,
+    -26,
+    -30,
+    -41,
+    -30,
+    -41,
+    12,
+    -31,
+    17,
+    -42,
+    19,
+    -41,
+    28,
+    -29,
+    28,
+    -27,
+    38
+  ],
+  "builtInMods": [
+    "civgrade",
+    "NcEngineering"
+  ],
+  "builtInWings": [],
+  "center": [
+    47,
+    48
+  ],
+  "collisionRadius": 120,
+  "coversColor": "255,180,170,255",
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -44,
+        24
+      ],
+      "style": "NCE3",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -44,
+        8
+      ],
+      "style": "NCE3",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -44,
+        -6
+      ],
+      "style": "NCE3",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -44,
+        -18
+      ],
+      "style": "NCE3",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -44,
+        -27
+      ],
+      "style": "NCE3",
+      "width": 8
+    }
+  ],
+  "height": 132,
+  "hullId": "vindac_dram",
+  "hullName": "VINDAC Dram",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    18,
+    1
+  ],
+  "shieldRadius": 100,
+  "spriteName": "graphics/VNC/ships/vindac_tanker_small.png",
+  "style": "NITE_CORP",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 45,
+      "arc": 275,
+      "id": "WS 001",
+      "locations": [
+        61,
+        22
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 225,
+      "arc": 275,
+      "id": "WS 002",
+      "locations": [
+        -26,
+        -20
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 003",
+      "locations": [
+        61,
+        -26
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 155,
+      "arc": 5,
+      "id": "WS 004",
+      "locations": [
+        -30,
+        34
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 190,
+      "id": "WS0001",
+      "locations": [
+        -18,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 90
+}

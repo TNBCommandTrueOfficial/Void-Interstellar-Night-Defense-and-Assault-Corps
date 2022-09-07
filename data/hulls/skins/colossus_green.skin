@@ -1,0 +1,11 @@
+{
+  "baseHullId": "colossus",
+  "baseValueMult": 1,
+  "descriptionId": "colossus",
+  "descriptionPrefix": "A green variant of the Colossus.",
+  "hullDesignation": "Heavy Freighter",
+  "hullName": "Colossus",
+  "restoreToBaseHull": false,
+  "skinHullId": "colossus_green",
+  "spriteName": "graphics/VNC/ships/colossus/colossusgreen.png"
+}

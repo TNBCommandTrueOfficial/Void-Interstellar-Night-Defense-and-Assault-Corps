@@ -1,0 +1,109 @@
+{
+  "bounds": [
+    11.5,
+    2.5,
+    14.5,
+    3.5,
+    14.5,
+    6.5,
+    1,
+    12.5,
+    -4,
+    12.5,
+    -10.5,
+    5,
+    -10.5,
+    -5,
+    -4,
+    -12.5,
+    1,
+    -12.5,
+    14.5,
+    -6.5,
+    14.5,
+    -3.5,
+    11.5,
+    -2.5
+  ],
+  "builtInWings": [],
+  "center": [
+    12,
+    10
+  ],
+  "collisionRadius": 16,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 19,
+      "location": [
+        -9,
+        4
+      ],
+      "style": "NCE3",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 19,
+      "location": [
+        -9,
+        -4
+      ],
+      "style": "NCE3",
+      "width": 6
+    }
+  ],
+  "height": 24,
+  "hullId": "vindac_shiv",
+  "hullName": "VINDAC Shiv",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    1,
+    0
+  ],
+  "shieldRadius": 16,
+  "spriteName": "graphics/VNC/ships/vindac_shiv1dmark.png",
+  "style": "NITE_CORP",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 001",
+      "locations": [
+        9,
+        2.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 5,
+      "id": "WS 002",
+      "locations": [
+        -8,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS003",
+      "locations": [
+        9,
+        -2.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 24
+}

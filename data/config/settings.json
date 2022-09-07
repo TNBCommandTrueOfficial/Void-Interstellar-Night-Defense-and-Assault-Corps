@@ -6,7 +6,7 @@
 	"buttonBg":[184,15,10,255],
 	"buttonBgDark":[124,05,0,05],
 	"buttonText":[146,0,0,255],
-	"buttonShortcut":[200,200,200,255],
+	"buttonShortcut":[199, 54, 57,255],
 	"storyOptionColor":[224,15,10,255],
 	"hColor":[184,15,10,255],  # highlight color, shorter version for use in reports.csv/rules.csv
 	#"defaultFont":"graphics/fonts/insignia15LTaa.fnt",
@@ -57,9 +57,9 @@
 
 	"graphics":{
 		"blueprint_packages":{
-			"vindac_package":"graphics/VNC/icons/cargo/vindac_package_bp.png",
-			"vindac_command_package":"graphics/VNC/icons/cargo/vindac_command_package_bp.png",
-			"vindac_recon_package":"graphics/VNC/icons/cargo/vindac_recon_package_bp.png",
+			"vindac_package":"graphics/VNC/icons/cargo/vindac_package_bp_1.png",
+			"vindac_command_package":"graphics/VNC/icons/cargo/vindac_command_package_bp_1.png",
+			"vindac_recon_package":"graphics/VNC/icons/cargo/vindac_recon_package_bp_1.png",
 		},
 		"terrain":{
 			"nebula_red":"graphics/VNC/terrain/nebula_red.png",

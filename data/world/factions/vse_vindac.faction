@@ -21,8 +21,10 @@
     "personNamePrefixAOrAn":"a",
 	"displayNameIsOrAre":"is",
 	"logo":"graphics/VNC/factions/custom/player_NiteCorp8_flag.png",
-	"crest":"graphics/VNC/factions/custom/player_NiteCorp6_crest.png",
+	"crest":"graphics/VNC/factions/custom/player_NiteCorp8_crest.png",
+	
     "shipNamePrefix":"VNC",
+	
 	"shipNameSources":{
 		"GENERAL":1,
 		"MERCANTILE":1,
@@ -57,9 +59,9 @@
 		
 			"knightCaptain":{"name":"Honor-Captain"},
 			
-			"citizen":{"name":"Commoner"},
+			"citizen":{"name":"VSE Citizen"},
 			"agent":{"name":"VINDAC Agent"},
-			"specialAgent":{"name":"Special Agent of VINDAC"},
+			"specialAgent":{"name":"Shadow Agent"},
 			
 			"pilot":{"name":"Pilot"},
         },
@@ -165,11 +167,11 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
 		"hulls":[],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -264,11 +266,11 @@
 		"allowsTransponderOffTrade":false,
 		"offersCommissions":true,
 		"engagesInHostilities":true,
-		"buysAICores":false,
+		"buysAICores":true,
 		"buysSurveyData":true,
         "postsNoBounties":false,
         "fightToTheLast":false, # order a full assault instead of retreating, in most cases
-        "caresAboutAtrocities":false,
+        "caresAboutAtrocities":true,
 		"punitiveExpeditionData":{
 			"vsCompetitors":false,
 			"vsFreePort":false,

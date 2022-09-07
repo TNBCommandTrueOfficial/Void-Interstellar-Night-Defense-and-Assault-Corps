@@ -1,0 +1,28 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
+  "goalVariant": true,
+  "hullId": "vindac_colossus",
+  "hullMods": [
+    "insulatedengine",
+    "unstable_injector"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_colossus_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vulcan",
+        "WS 002": "vulcan",
+        "WS 003": "vulcan",
+        "WS 004": "vulcan",
+        "WS0001": "dualflak"
+      }
+    }
+  ],
+  "wings": []
+}

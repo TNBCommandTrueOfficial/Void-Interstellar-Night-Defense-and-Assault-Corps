@@ -1,0 +1,54 @@
+{
+  "displayName": "Balanced",
+  "fluxCapacitors": 12,
+  "fluxVents": 24,
+  "goalVariant": true,
+  "hullId": "vindac_venture",
+  "hullMods": [
+    "targetingunit",
+    "missleracks",
+    "militarized_subsystems"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "vindac_venture_Balanced",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 002": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "harpoonpod",
+        "WS 006": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "sabot",
+        "WS 007": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavyac",
+        "WS 003": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

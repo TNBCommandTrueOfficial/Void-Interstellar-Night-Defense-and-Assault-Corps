@@ -1,0 +1,283 @@
+{
+	"id":"vse_vindac_514th",
+	"color":[146,0,0,255], #default:184,15,10,127
+	
+	"baseUIColor":[146,0,0,255],	#default:184,15,10,255
+	"secondaryUIColor":[25,25,25,255], #default:214,35,00,255 | 240, 217, 48
+	"secondarySegments":35,		#Total amount of segments of the circle
+	"darkUIColor":[84,15,10,175],
+	"gridUIColor":[184,15,10,75],
+	
+	"brightUIColor":[224,15,30,255],
+	
+    "displayName":"V.I.N.D.A.C. 514th Recon Bn.",
+    "displayNameWithArticle":"VINDAC's 514th Recon Battalion",
+    "displayNameLong":"VINDAC's 514th Recon Battalion",
+    "displayNameLongWithArticle":"the 514th Recon Battalion of VINDAC",
+	"entityNamePrefix":"514th Recon Bn.",
+    "personNamePrefix":"514th Recon Bn.",
+    "personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"is",
+	
+	"logo":"graphics/VNC/factions/custom/player_NiteCorp8_514th_flag.png",
+	"crest":"graphics/VNC/factions/custom/player_NiteCorp8_514th_crest.png",
+	
+    "shipNamePrefix":"514th VNC",
+	
+	"shipNameSources":{
+		"vindac":1,
+	},
+	"names":{
+		"old english":1,
+		"world":1,
+	},
+
+	"ranks":{
+        "ranks":{
+            "factionLeader":{"name":"Lieutenant Colonel of the 514th"},
+
+			"spaceSailor":{"name":"Spacer"},
+			"spaceChief":{"name":"514th Chief"},
+			"spaceEnsign":{"name":"514th Recruit"},
+			"spaceLieutenant":{"name":"514th Lieutenant"},
+            "spaceCommander":{"name":"514th Rear Admiral (Lower Half)"},
+            "spaceCaptain":{"name":"514th Rear Admiral (Upper Half)"},
+            "spaceAdmiral":{"name":"514th Admiral"},
+			"spaceMarshal":{"name":"514th Marshal"},
+		
+			"groundPrivate":{"name":"514th Private"},
+			"groundSergeant":{"name":"514th Sergeant"},
+			"groundLieutenant":{"name":"514th Lieutenant"},
+			"groundCaptain":{"name":"514th Captain"},
+			"groundMajor":{"name":"514th Major"},
+			"groundColonel":{"name":"514th Colonel"},
+			"groundGeneral":{"name":"514th General"},
+		
+			"knightCaptain":{"name":"514th Honor-Captain"},
+			
+			"citizen":{"name":"VSE Citizen"},
+			"agent":{"name":"VINDAC Agent"},
+			"specialAgent":{"name":"Shadow Agent"},
+			
+			"pilot":{"name":"Pilot"},
+        },
+        "posts":{
+            "factionLeader":{"name":"Lieutenant Colonel of the 514th"},
+
+            "patrolCommander":{"name":"514th Vice Admiral"},
+            "fleetCommander":{"name":"514th Admiral"},
+
+            "baseCommander":{"name":"514th Major General"},
+            "stationCommander":{"name":"514th Major Colonel"},
+            "outpostCommander":{"name":"514th Major"},
+            "portmaster":{"name":"514th Port Commander"},
+
+            "supplyOfficer":{"name":"514th Supply-Commander"},
+            "supplyManager":{"name":"514th Supplier"},
+            "medicalSupplier":{"name":"514th Medic"},
+			
+			"administrator":{"name":"Nite Corp Chairman"},
+			"freeAdmin":{"name":"Chairman (available for hire)"},
+			
+			"genericMilitary":{"name":"514th Commander"},
+		
+			"trader":{"name":"Nite Corp Trader"},
+			"merchant":{"name":"Nite Corp Merchant"},
+			"investor":{"name":"Nite Corp Investor"},
+			"commodities_agent":{"name":"Nite Corp Commodities Agent"},
+			"entrepreneur":{"name":"Nite Corp Entrepreneur"},
+		
+			"smuggler":{"name":"Smuggler"},
+			"armsDealer":{"name":"Arms Dealer"},
+			
+			
+			"quartermaster":{"name":"514th Quartermaster"},
+
+            "citizen":{"name":"VSE Citizen"},
+		
+			"mercenary":{"name":"514th Mercenary Officer"},
+			"officer":{"name":"514th Officer"},
+			"officer_for_hire":{"name":"Officer (available for hire)"}, 
+		
+
+            "investigator":{"name":"Private Investigator"},
+			"agent":{"name":"Agent"},
+			"specialAgent":{"name":"Special Agent"},
+        },
+    },
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"faithful":5,		
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":5,
+		},
+		"HIGH":{
+			"soldier":10,
+			"official":5,
+		},
+	},
+	"fleetTypeNames":{
+		"trade":"Logistics Fleet",
+		"smallTrader":"Trade Fleet",
+		"tradeLiner":"Commerce Line",
+		"tradeSmuggler":"Smuggler",
+		
+		"patrolSmall":"Observers",
+		"patrolMedium":"Flotilla",
+		"patrolLarge":"Armada",
+		
+		"inspectionFleet":"Interceptorium",
+		"taskForce":"Crusader Corp",
+	
+		"scavengerSmall":"Prospector",
+		"scavengerMedium":"Scavenger",
+		"scavengerLarge":"Cleanup Fleet",
+		
+		"foodReliefFleet":"Relief Fleet",
+		
+		#"mercScout":"Seeker",
+		#"mercBountyHunter":"Judgment-bringer",
+		#"mercPrivateer":"Abjudicator",
+		#"mercPatrol":"Crusading Fleet",
+		#"mercArmada":"Crusading Armada",
+	
+		"battlestation":"Battlestation",
+	},
+	
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"vindac_command_bp":99,
+		},
+		"hulls":{
+			#"colossus":0,
+			#"colossus_green":10,
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"hulls":[],
+	},
+	"knownShips":{
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"hulls":[],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"hulls":[],
+	},
+	"knownFighters":{
+		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"fighters":[],
+	},
+	"priorityFighters":{
+		"tags":["vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"fighters":[],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"weapons":[],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "vindac_bp", "vindac_command_bp", "vindac_recon_bp"],
+		"hullMods":[],
+	},
+	"factionDoctrine":{
+		"warships":3,
+		"carriers":3,
+		"phaseShips":1,
+		
+		"officerQuality":1,
+		"shipQuality":3,
+		"numShips":3,
+		
+		"shipSize":3,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0.25,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.5,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.2,
+
+		"commanderSkillsShuffleProbability":0.25,
+		"commanderSkills":[
+			"crew_training",
+			"officer_training",
+			"officer_management",
+			"coordinated_maneuvers",
+			"electronic_warfare",
+			"fighter_uplink",
+			"carrier_group",
+			"flux_regulation",
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		"alpha_core",
+	],
+	
+	"music":{
+		"theme":"music_diktat_market_neutral",
+		"market_neutral":"music_diktat_market_neutral",
+		"market_hostile":"music_diktat_market_hostile",
+		"market_friendly":"music_diktat_market_friendly",
+		"encounter_neutral":"music_diktat_encounter_neutral",
+		"encounter_hostile":"music_diktat_encounter_hostile",
+		"encounter_friendly":"music_diktat_encounter_friendly",
+	},
+	"barSound":"bar_ambience",
+	
+	"portraits":{
+		"standard_male":[
+			"graphics/VNC/portraits/vnc_male01.png",
+			"graphics/VNC/portraits/vnc_male02.png",
+			"graphics/VNC/portraits/vnc_male03.png",
+			"graphics/VNC/portraits/vnc_merc01.png",
+			"graphics/VNC/portraits/vnc_hunter01.png",
+
+		],
+		"standard_female":[
+			"graphics/VNC/portraits/vnc_female01.png",
+			"graphics/VNC/portraits/vnc_female02.png",
+			"graphics/VNC/portraits/vnc_female03.png",
+			"graphics/VNC/portraits/vnc_female04.png",
+		],
+	},
+	
+    "custom":{
+		"allowsTransponderOffTrade":false,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"buysSurveyData":true,
+        "postsNoBounties":false,
+        "fightToTheLast":false, # order a full assault instead of retreating, in most cases
+        "caresAboutAtrocities":true,
+		"punitiveExpeditionData":{
+			"vsCompetitors":false,
+			"vsFreePort":false,
+			"canBombard":false,
+			"territorial":true,
+		},
+    },
+   "dialogue":{ #What the faction will tell players in the comm.
+      "greetingFriendly":"This Tri-Tachyon vessel is on a classified mission. Identity and friendly status confirmed.",
+      "greetingNeutral":"We of the Tri-tachyon corporation have scanned your vessel and analyzed your tactical capabilities. Maintain your distance.",
+      "greetingHostileAggressive":"Attention. Your vessel has scanned and identified as hostile to the Tri-Tachyon corporation. Prepare for annihilation.",
+      "greetingHostileTimid":"Attention. Your vessel has scanned and identified as hostile to the Tri-Tachyon corporation. Further attempts at aggression will be recorded.",
+   }   
+}

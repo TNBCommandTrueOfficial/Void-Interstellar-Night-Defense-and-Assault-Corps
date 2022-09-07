@@ -1,0 +1,129 @@
+{
+
+	"system_burn_drive_activateVNC":[ 
+		{"file":"sounds/VNC/sfx_ship_sounds/burn_drive_activateVNC.ogg","pitch":1.0,"volume":1.20},
+	],
+
+	"system_burn_drive_loopVNC":[ 
+		{"file":"sounds/VNC/sfx_ship_sounds/burn_drive_loopVNC.ogg","pitch":1.0,"volume":1.20},
+	],
+
+	"system_burn_drive_deactivateVNC":[ 
+		{"file":"sounds/VNC/sfx_ship_sounds/burn_drive_deactivateVNC.ogg","pitch":1.0,"volume":1.20},
+	],
+
+	"system_charge_drive_activationVNC":[ 
+		{"file":"sounds/VNC/sfx_system_sounds/charge_drive_activationVNC2_heavier5.ogg","pitch":1.0,"volume":0.25},
+	],
+	"system_charge_drive_activeloopVNC":[ 
+		{"file":"sounds/VNC/sfx_system_sounds/charge_drive_activeloopVNC.ogg","pitch":1.0,"volume":1.20},
+	],
+	"system_charge_drive_deactivationVNC":[ 
+		{"file":"sounds/VNC/sfx_system_sounds/charge_drive_deactivationVNC2_heavier5.ogg","pitch":1.0,"volume":0.25},
+	],
+ 
+	"vnc_engine_loop":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_fighter.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_frigate.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_destroyer.ogg","pitch":1.00,"volume":1.00}, 
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_cruiser.ogg","pitch":1.00,"volume":1.00}, 
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_capital.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0,1,2,3,4], "pitch":1.00, "volume":1.00},
+		"FIGHTER":{"sounds":[0], "pitch":1.00, "volume":0.65},
+		"FRIGATE":{"sounds":[1], "pitch":1.00, "volume":0.75},
+		"DESTROYER":{"sounds":[2], "pitch":1.00, "volume":0.80},
+		"CRUISER":{"sounds":[3], "pitch":1.00, "volume":0.90},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1.00, "volume":1.00},
+	},
+
+	"vnc_flux_loop":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_fluxvent_loop.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FIGHTER":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FRIGATE":{"sounds":[0], "pitch":1.00, "volume":1.05},
+		"DESTROYER":{"sounds":[0], "pitch":1.00, "volume":1.10},
+		"CRUISER":{"sounds":[0], "pitch":1.00, "volume":1.20},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1.00, "volume":1.30},
+	},
+   
+	"vnc_flux_vent":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_fluxvent.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FIGHTER":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FRIGATE":{"sounds":[0], "pitch":1.00, "volume":1.06},
+		"DESTROYER":{"sounds":[0], "pitch":1.00, "volume":1.12},
+		"CRUISER":{"sounds":[0], "pitch":1.00, "volume":1.17},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1.00, "volume":1.25},
+	},
+
+	"vnc_engine_boost":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_boost_01.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_boost_02.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_engine_boost_03.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0,1,2], "pitch":1.00, "volume":0.80},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1.00, "volume":1.00},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1.00, "volume":1.10},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1.00, "volume":1.20},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1.00, "volume":1.35},
+	},
+
+	"vnc_shield_raise":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shield_large.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shield_medium.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shield_small.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0,1,2], "pitch":1.00, "volume":1.00},
+		"FIGHTER":{"sounds":[2], "pitch":1.00, "volume":1.00},
+		"FRIGATE":{"sounds":[2], "pitch":1.00, "volume":1.01},
+		"DESTROYER":{"sounds":[1], "pitch":1.00, "volume":1.02},
+		"CRUISER":{"sounds":[1], "pitch":1.00, "volume":1.05},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1.00, "volume":1.08},
+	},	
+
+	"vnc_explosion":{ # when a fighter or ship explodes
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shipexplosion_1.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shipexplosion_2.ogg","pitch":1.00,"volume":1.00},
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shipexplosion_3.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0,1,2], "pitch":1.0, "volume":1.00},
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1.00, "volume":0.90},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1.00, "volume":1.00},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1.00, "volume":1.10},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1.00, "volume":1.20},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1.00, "volume":1.30},
+	},
+
+	"vnc_overload_start":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shields_burnout_oneshot.ogg","pitch":1.05,"volume":1.0},					
+		],
+		"NITE_CORP":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FIGHTER":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FRIGATE":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"DESTROYER":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"CRUISER":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1.00, "volume":1.00},
+	},
+
+	"vnc_overload_loop":{
+		"sounds":[
+			{"file":"sounds/VNC/sfx_ship_sounds/vnc_shields_burnout_loop.ogg","pitch":1.00,"volume":1.00},
+		],
+		"NITE_CORP":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FIGHTER":{"sounds":[0], "pitch":1.00, "volume":1.00},
+		"FRIGATE":{"sounds":[0], "pitch":1.00, "volume":1.03},
+		"DESTROYER":{"sounds":[0], "pitch":1.00, "volume":1.05},
+		"CRUISER":{"sounds":[0], "pitch":1.00, "volume":1.08},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1.00, "volume":1.10},
+	},
+}

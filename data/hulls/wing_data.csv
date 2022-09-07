@@ -1,0 +1,10 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+vindac_broadsword_wing,vindac_broadsword_Fighter,"fighter4, fighter, low, vindac_bp",0,,7,9,V,4000,500,,3,FIGHTER,Heavy Fighter,10,7000,,,,,,,,,,,,,35
+vindac_talon_wing,vindac_talon_Interceptor,"interceptor1, interceptor, low, vindac_bp",0,,3,2,V,4000,200,600,5,INTERCEPTOR,Interceptor,5,2000,,,,,,,,,,,,,6
+vindac_mining_drone_wing,vindac_mining_drone_Standard,"support0, drone, low, vindac_bp, auto_fighter",0,,5,0,BOX,0,500,,4,FIGHTER,Drone,10,1500,,,,,,,,,,,,,37
+vindac_drone_borer_wing,vindac_drone_borer_Standard,"no_drop, no_sell, vindac_bp, low",0,,4,0,BOX,2000,500,,6,INTERCEPTOR,Drone,5,1500,,,,,,,,,,,,,
+vindac_shiv_wing,vindac_shiv_Interceptor,"interceptor1, interceptor, low, vindac_bp",0,,3,2,V,4000,250,650,5,INTERCEPTOR,Interceptor,5,2000,,,,,,,,,,,,,6
+vindac_cobra_Standard_wing,vindac_cobra_Standard,"bomber5, bomber, low, vindac_bp, hist1t",2,,6,15,V,4000,2000,600,1,BOMBER,Bomber,20,10000,,,,,,,,,,,,,10
+vindac_storm_harasser_wing,vindac_storm_harasser,"fighter4, fighter, low, vindac_bp",0,,7,9,V,4000,500,,3,FIGHTER,Heavy Fighter,10,7000,,,,,,,,,,,,,36
+vindac_storm_special_wing,vindac_storm_special,"fighter4, fighter, low, vindac_bp",0,,7,10,CLAW,4000,500,,2,BOMBER,Heavy Hybrid,"10",7000,,,,,,,,,,,,,37
+vindac_storm_assaulter_wing,vindac_storm_assaulter,"fighter4, fighter, low, vindac_bp",0,,7,12,CLAW,4000,500,,2,BOMBER,Heavy Bomber,10,7000,,,,,,,,,,,,,38

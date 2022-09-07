@@ -1,0 +1,18 @@
+{
+    "playableFaction":false,
+    "startingFaction":false,
+    "corvusCompatible":true,
+	#"showIntelEvenIfDead":true,
+    "spawnAsFactionId":"vse_vindac",
+    "rebelFleetSuffix":"Exiled",
+	
+	"useConfigRelationshipsInNonRandomSector": true,
+    "startRelationships":{ "vse_vindac":1 },
+
+    "invasionFleetName":"514th Invasion Armada",
+    "responseFleetName":"514th Planetary Defense Fleet",
+    "invasionSupportFleetName":"514th Support Flotilla",
+    "defenceFleetName":"514th Defense Auto-Fleet",
+    
+    "morality":"good"
+}

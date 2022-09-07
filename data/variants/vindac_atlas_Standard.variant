@@ -1,0 +1,28 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 20,
+  "fluxVents": 11,
+  "goalVariant": true,
+  "hullId": "vindac_atlas",
+  "hullMods": [
+    "auxiliarythrusters"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_atlas_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vulcan",
+        "WS 002": "vulcan",
+        "WS 003": "vulcan"
+      }
+    }
+  ],
+  "wings": [
+    "vindac_talon_wing",
+    "vindac_broadsword_wing"
+  ]
+}

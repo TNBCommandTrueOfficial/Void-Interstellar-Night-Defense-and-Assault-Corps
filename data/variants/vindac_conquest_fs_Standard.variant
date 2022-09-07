@@ -1,0 +1,78 @@
+{
+  "variantId": "vindac_conquest_fs_Standard",
+  "hullId": "vindac_conquest_fs",
+  "displayName": "Elite\r",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "blast_doors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "hurricane",
+        "WS 002": "squall",
+        "WS 019": "swarmer_fighter",
+        "WS 020": "swarmer_fighter",
+        "WS0001": "swarmer_fighter",
+        "WS0002": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "mjolnir",
+        "WS 012": "mjolnir",
+        "WS 022": "ionpulser",
+        "WS0003": "irpulse",
+        "WS0004": "irpulse",
+        "WS0005": "irpulse",
+        "WS0006": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 013": "flak",
+        "WS 014": "flak",
+        "WS 015": "dualflak",
+        "WS 016": "dualflak",
+        "WS 017": "flak",
+        "WS 018": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lrpdlaser",
+        "WS 004": "lrpdlaser",
+        "WS 005": "lrpdlaser",
+        "WS 006": "lrpdlaser",
+        "WS 007": "lrpdlaser",
+        "WS 008": "lrpdlaser",
+        "WS 009": "lrpdlaser",
+        "WS 010": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "vindac_storm_harasser_wing",
+    "vindac_storm_special_wing",
+    "vindac_shiv_wing"
+  ]
+}

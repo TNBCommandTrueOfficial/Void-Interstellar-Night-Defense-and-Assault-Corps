@@ -1,0 +1,27 @@
+{
+  "displayName": "Heavy Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "vindac_storm_special",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "vindac_storm_special",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "atropos_single",
+        "WS 002": "lightmg"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

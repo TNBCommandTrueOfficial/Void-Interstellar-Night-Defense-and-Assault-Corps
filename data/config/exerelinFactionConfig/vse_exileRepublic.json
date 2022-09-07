@@ -1,0 +1,124 @@
+{	
+    "playableFaction":true,
+	"startingFaction":true,
+    "corvusCompatible":true,
+	"showIntelEvenIfDead":false,
+	"freeStart":true,
+	"spawnAsFactionId":"vse_exileRepublic",
+	
+    "ngcTooltip":"Having had to run for their lives as the Void Sakura Empire wiped out the Exile's Republic last stronghold of Sanshiti back on the planet now named after the VSE's origin city of Konta, you finally take a seat as captain of your own fleet for the Exile's Republic, ready for some revenge.",
+    "rebelFleetSuffix":"Outcasts",
+	
+    "specialForcesMaxFleets":2,
+	
+    "marketSpawnWeight":1.2,
+	
+	"useConfigRelationshipsInNonRandomSector": true,
+	
+    "morality":"amoral",
+	
+    "startRelationships":{
+		
+		# Vanilla factions Neutral - Hostile Relations
+		"tritachyon": 0.0,						# Relatively unknown, too technological
+		"hegemony":-0.1,						# Not really likes what we do with independents
+		"remnant":-0.5,							# We WILL defend ourselves, human or AI
+		"independent": -0.7,					# Easy pickin's
+		"player": -0.8,							# Who is this lone wolf?
+		"vse_vindac": -1.0,						# The ones who led the last push on Sanshiti...
+		
+		# Vanilla faction Good - Neutral
+		"luddic_church": 0.3,					# As our beliefs are strong, the church welcomes us
+		"luddic_path": 0.3,						# Sometimes extreme situations require extreme measures
+		"pirates": 0.2,							# We require supplies too
+		"persean": 0.1,							# No taxes, who doesn't love that
+		
+		# These should be set to the same relationship
+		"sindrian_diktat": -0.4,				# We are not to be controlled
+		"lions_guard": -0.4,					# So you also stay away!
+		
+		
+	},
+	
+    "maxRelationships":{
+		"sindrian_diktat": -0.2,	
+		"tritachyon": 0.0,										
+        "pirates": 0.0,
+        "hegemony": 0.0,
+        "independent": 0.0,
+		"vse_vindac": 0.0,
+		"pirates": 0.6,							
+		"luddic_church": 1.0,					
+		"luddic_path": 0.6,						
+		"player": 1.0,
+    },
+	
+    "diplomacyPositiveChance":{
+		"luddic_church": 1.25,
+		"persean": 0.95,
+	},
+    "diplomacyNegativeChance":{
+		"hegemony": 1.33,
+		"vse_vindac": 1.8,
+	},
+	
+    "alignments":{
+        "hierarchial":1,
+        "militarist":0.8,
+        "ideological":0.9,
+    },
+	
+	# factionTraits.json 
+    "diplomacyTraits":["paranoid", "helps_allies", "irredentist", "foreverwar", "selfrighteous", "hates_ai", "envious", "anarchist", "lowprofile"],
+    
+    "colonyExpeditionChance":1,	# baseline expansion behaviour
+    #"colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+	
+    "vengeanceLevelNames":["Wanted Alive", "Wanted Dead"],
+    "vengeanceFleetNames":["Bounty Hunters", "Blood Hunters"],
+    "vengeanceFleetNamesSingle":["a Bounty Hunter", "a Blood Hunter"],
+	
+    "startShipsSolo":[
+      ["swp_alastor_sta"],
+      ["vindac_hammerhead_Standard"],
+      # tutorial start
+      ["vindac_wolf_Standard", "vindac_kite_Standard"],
+      ["vindac_wolf_Standard", "vindac_shepherd_Standard"],
+      ["vindac_mule_Standard", "vindac_kite_Standard"],
+      ["vindac_mule_Standard", "vindac_shepherd_Standard"],
+    ],
+    "startShipsCombatSmall":[
+		["vindac_hammerhead_Standard", "vindac_wolf_Standard", "vindac_kite_Standard"]
+	],
+    "startShipsTradeSmall":[
+		["vindac_mule_Standard", "vindac_hound_Standard", "vindac_kite_Standard"]
+	],
+    "startShipsCombatLarge":[
+		["swp_vulture_sta", "swp_striker_ass", "wolf_Assault"],
+		["vindac_eagle_Assault", "vindac_hammerhead_Standard", "vindac_brawler_Standard"],
+		["vindac_eagle_Assault", "vindac_falcon_Standard", "vindac_hammerhead_Standard", "vindac_vigilance_Standard"],
+    ],
+    "startShipsTradeLarge":[
+		["vindac_colossus_Standard", "vindac_mule_Standard", "vindac_shepherd_Standard"]
+	],
+    "startShipsExplorerLarge":[
+		["vindac_venture_Balanced", "vindac_buffalo_Standard", "vindac_shepherd_Standard"]
+	],
+    "startShipsCarrierSmall":[
+		["vindac_condor_Standard", "vindac_wolf_Standard", "vindac_vigilance_Standard"]
+	],
+    "startShipsCarrierLarge":[
+		["vindac_conquest_Standard", "vindac_heron_Standard", "vindac_hammerhead_Standard", "vindac_brawler_Standard"]
+	],
+    "startShipsGrandFleet":[
+		["vindac_conquest_Standard", "vindac_conquest_fs_Annihilator", "vindac_heron_Standard", "vindac_eagle_Assault", "vindac_falcon_Standard", "vindac_hammerhead_v2_Standard", "vindac_brawler_Standard", "vindac_condor_Standard", "vindac_vigilance_Standard", "vindac_kite_Standard", "vindac_kite_Standard"]
+	],
+	#"startShipsSuper":[["hyperion_Attack"]],
+    
+    "startSpecialItems":[
+        [], #["low_tech_package", ""], ["midline_package", ""], ["high_tech_package", ""], ["XIV_package", ""], ["missile_package", ""], 
+    ],
+	
+    "miningVariantsOrWings":[],
+	
+}

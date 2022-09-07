@@ -1,0 +1,69 @@
+{
+  "bounds": [
+    12,
+    11,
+    -10,
+    14,
+    -9,
+    -13,
+    7,
+    -10
+  ],
+  "builtInWings": [],
+  "center": [
+    16,
+    12
+  ],
+  "collisionRadius": 24,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 24,
+      "location": [
+        -12,
+        9
+      ],
+      "style": "NCE3",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 24,
+      "location": [
+        -12,
+        -9
+      ],
+      "style": "NCE3",
+      "width": 12
+    }
+  ],
+  "height": 27,
+  "hullId": "vindac_mining_drone",
+  "hullName": "VINDAC Mining Drone",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 24,
+  "spriteName": "graphics/VNC/ships/vindac_mining_drone.png",
+  "style": "NITE_CORP",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -30,
+      "arc": 120,
+      "id": "WS 001",
+      "locations": [
+        2,
+        -6
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 32
+}

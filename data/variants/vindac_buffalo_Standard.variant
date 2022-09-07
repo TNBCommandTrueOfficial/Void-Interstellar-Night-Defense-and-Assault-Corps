@@ -1,0 +1,23 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 7,
+  "fluxVents": 6,
+  "goalVariant": true,
+  "hullId": "vindac_buffalo",
+  "hullMods": [
+    "auxiliarythrusters"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "vindac_buffalo_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lrpdlaser"
+      }
+    }
+  ],
+  "wings": []
+}
