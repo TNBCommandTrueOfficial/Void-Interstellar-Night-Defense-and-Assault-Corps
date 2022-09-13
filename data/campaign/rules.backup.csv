@@ -1,4 +1,5 @@
 id,trigger,conditions,script,text,options,notes
+"#RULESET_NAME VSE (Backup)",,,,,,
 ,,,,,,
 # VINDAC Faction fleet VINDAC_Greeting lines,,,,,,
 VINDAC_GreetingNoComms,OpenCommLink,"$faction.id ==vse_vindac
@@ -15,9 +16,9 @@ VINDAC_GreetingDefaultTOffWeaker,OpenCommLink,"$faction.id == vse_vindac
 $entity.relativeStrength < 0",,"$PersonRank $personLastName looks concerned. ""With the authority invested in me by $playerName of $theFaction, I request that you identify yourself or be on your way.""","turnOnTransponder:Turn your transponder on
 cutCommLink:Cut the comm link",
 ,,,,,,
-VINDAC_GreetingDefaultTurnOnT,DialogOptionSelected,$option == turnOnTransponder,"ActivateAbility $player.fleetId transponder
+VINDAC_GreetingDefaultTurnOnT,DialogOptionSelected,"$option == turnOnTransponder","ActivateAbility $player.fleetId transponder
 UpdateMemory
-FireBest OpenCommLink",You issue an order to activate the transponder and re-open the comm link.,,
+FireBest OpenCommLink","You issue an order to activate the transponder and re-open the comm link.",,
 ,,,,,,
 VINDAC_GreetingDefaultFriendlyNoAtrocity,OpenCommLink,"$faction.id == vse_vindac
 $player.atrocities < 2
@@ -42,14 +43,14 @@ OR
 VINDAC_GreetingDefaultInfamous,OpenCommLink,"$faction.id == vse_vindac,
 $player.atrocities > 1
 $player.transponderOn
-RollProbability 0.3 score:2",#$recognizedAsInfamous,"""You have been scanned and,"" $heOrShe blinks at $hisOrHer screen, then says almost - but not quite - under $hisOrHer breath, ""$playerName. The butcher."" 
+RollProbability 0.3 score:2","#$recognizedAsInfamous","""You have been scanned and,"" $heOrShe blinks at $hisOrHer screen, then says almost - but not quite - under $hisOrHer breath, ""$playerName. The butcher."" 
 
 $HeOrShe straightens $hisOrHer back, ""We serve for the glory of $theFaction, $playerSirOrMadam. That much has always been true. ""
 
 ""I just... I just hope it was worth it."" $PersonRank $personLastName looks off to the side wistfully before suddenly adopting a stoic expression. Whatever feelings $HeOrShe had just displayed, they've faded into obscurity behind the mask of a worn and tired soldier.",,
+"#END VINDAC Faction fleet VINDAC_Greeting lines",,,,,,
 ,,,,,,
-,,,,,,
-#New Faction description,,,,,,
+# New Faction description,,,,,,
 VINDAC_CooperativeDescAttrocity,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
 $faction.id == vse_vindac
 $player.atrocities > 1",,"As a renowned member of $theFactionLong, your influence within is unshakeable and you are as respected as you are feared. Throughout the Void Sakura Empire, glasses are raised in your name, though some prefer not to openly do so following some of the more questionable actions you have comitted in the sector.",,
@@ -57,3 +58,5 @@ $player.atrocities > 1",,"As a renowned member of $theFactionLong, your influenc
 VINDAC_CooperativeDesc,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
 $faction.id == vse_vindac
 $player.atrocities < 2",,"As a renowned member of $theFactionLong, your influence within is unshakeable. Throughout the Void Sakura Empire, glasses are raised in your name with pride and chanting.",,
+"#END New Faction description",,,,,,
+

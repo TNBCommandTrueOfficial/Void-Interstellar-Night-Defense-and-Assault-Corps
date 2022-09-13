@@ -3,7 +3,7 @@
 	"name":"Void Night Defense & Assault Corps", # Displayed to the player
 	"author":"TNB_Command",
     "utility":"false",
-	"version":"0.1 DEV",
+	"version":"0.3 DEV",
 	"description":"Adds the Void Nite Defense and Assault Corps faction to the Persean sector. (original work DO NOT STEAL)",
     "gameVersion": "0.95.1a-RC6", 
   	"jars":["jars/VNDAC.jar"],

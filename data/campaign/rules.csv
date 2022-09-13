@@ -1,59 +1,71 @@
 id,trigger,conditions,script,text,options,notes
+"#RULESET_NAME VSE",,,,,,
 ,,,,,,
-# VINDAC Faction fleet VINDAC_Greeting lines,,,,,,
-VINDAC_GreetingNoComms,OpenCommLink,"$faction.id ==vse_vindac
+# VINDAC Fleet Greeting Lines,,,,,,
+greetingVINDACFriendly,OpenCommLink,"$faction.id == vse_vindac
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""VSEI codes received and confirmed, moving to secure channel."" $PersonPost $personLastName briefly checks the monitor at $hisOrHer side. ""Hope the Exiles haven't been too much of a problem for you $playerSirOrMadam - If they have, you know we can always back you up when needed."", the $PersonPost says before cutting the comms.",,
+greetingVINDACNoComms,OpenCommLink,"$faction.id == vse_vindac
 $entity.ignorePlayerCommRequests score:10000","ShowDefaultVisual
-EndConversation NO_CONTINUE","You try to establish a comm link, but get only static.",,
-,,,,,,
-VINDAC_GreetingDefaultTOffNormal,OpenCommLink,"$faction.id == vse_vindac
+EndConversation NO_CONTINUE","< STATIC > (Seems they aren't allowing comms to go through)",,
+greetingVINDACTOffNormal,OpenCommLink,"$faction.id == vse_vindac
 !$player.transponderOn
-$entity.relativeStrength >= 0",,"$PersonRank $personLastName looks alert. ""With the authority invested in me by $playerName of $theFaction, I command you to identify yourself or be on your way.""","turnOnTransponder:Turn your transponder on
+$entity.relativeStrength >= 0",,"""This is $PersonPost $personName of the $thePersonFaction, you are in Void Sakura Empire controlled space, turn on your transponder and identify yourself!""","turnOnTransponder:Turn your transponder on
 cutCommLink:Cut the comm link",
-,,,,,,
-VINDAC_GreetingDefaultTOffWeaker,OpenCommLink,"$faction.id == vse_vindac
+greetingVINDACTOffWeaker,OpenCommLink,"$faction.id == vse_vindac
 !$player.transponderOn
-$entity.relativeStrength < 0",,"$PersonRank $personLastName looks concerned. ""With the authority invested in me by $playerName of $theFaction, I request that you identify yourself or be on your way.""","turnOnTransponder:Turn your transponder on
+$entity.relativeStrength < 0",,"""This is $PersonPost $personName of the $thePersonFaction, you are in Void Sakura Empire controlled space, I hereby request you to turn on your transponder so we can identify you.""","turnOnTransponder:Turn your transponder on
 cutCommLink:Cut the comm link",
-,,,,,,
-VINDAC_GreetingDefaultTurnOnT,DialogOptionSelected,$option == turnOnTransponder,"ActivateAbility $player.fleetId transponder
-UpdateMemory
-FireBest OpenCommLink",You issue an order to activate the transponder and re-open the comm link.,,
-,,,,,,
-VINDAC_GreetingDefaultFriendlyNoAtrocity,OpenCommLink,"$faction.id == vse_vindac
-$player.atrocities < 2
-$player.transponderOn
-$faction.friendlyToPlayer","$menuState = fleetConvMain 0
-FireAll PopulateOptions","""Acknowledging receipt of your codes, moving to a secure channel."" $PersonRank $personName briefly checks the monitor at $hisOrHer side, then: ""Yes? All is well I trust? Glad to hear it, $playerSirOrMadam. Over and out.""
+greetingVINDACHostileWeaker,OpenCommLink,"$faction.id == vse_vindac
+$entity.isHostile
+$entity.relativeStrength < 0","$ignorePlayerCommRequests = true 1","""Hostile $shipOrFleet, be advised: we've dispatched a distress signal to a nearby patrol which should arrive shortly.""","cutCommLink:Cut the comm link",
+greetingVINDACHostileWeakerDefiant,OpenCommLink,"$faction.id == vse_vindac
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding","$ignorePlayerCommRequests = true 1","The hostile fleet's $PersonPost looks uncertain, yet defiant. ""We will not go down without a fight,"" $heOrShe says.
 OR
-""Your $shipOrFleet has been scanned and identified, everything is in order. Burn bright, $playerSirOrMadam.""
-OR
-""Scanned and identified. You're flying pretty, $playerSirOrMadam. Clean jumps and high burn."" $PersonRank $personLastName signs off with a flash of the $faction sigil.""",,
-,,,,,,
-VINDAC_GreetingDefaultFriendlyAtrocity,OpenCommLink,"$faction.id == vse_vindac
+""Everybody to combat positions, may the Godess' praise be upon us!"" $PersonPost $personName announces through the intercom, accidentally also broadcasting it through the comms link before shutting it off.","cutCommLink:Cut the comm link",
+greetingVINDACHostileStronger,OpenCommLink,"$faction.id == vse_vindac
+$entity.isHostile
+$entity.relativeStrength >= 0","EndConversation","""Your terror against the $thePersonFaction will end here captain!"", $PersonPost $personName says before cutting off comms and ordering all ships into battle positions.",,
+greetingVINDACNeutral,OpenCommLink,"$faction.id == vse_vindac
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""You have been scanned and identified. If you do not have anything important to report I request you to be on your way. We have more important matters to attend too.""",,
+greetingVINDACInfamous,OpenCommLink,"$faction.id == vse_vindac
 $player.atrocities > 1
-$player.transponderOn
-$faction.friendlyToPlayer","$menuState = fleetConvMain 0
-FireAll PopulateOptions","""Acknowledging receipt of your codes, moving to a secure channel."" $PersonRank $personName nervously taps on a device at $hisOrHer side, then: ""All is well I trust? Glad to hear it, $playerSirOrMadam. Over and out.""
+RollProbability 0.3 score:2
+$faction.neutralToPlayer","#$recognizedAsInfamous
+AdjustRepActivePerson INHOSPITABLE -5","""You have been scanned and-..."" $HeOrShe blinks at $hisOrHer screen, then says almost - but not quite - under $hisOrHer breath, ""$playerName. It's..You..."" 
+
+$HeOrShe fixes $hisOrHer posture, ""I suggest keeping your distance. We are well armed and do not plan to pass off into the void today.""
 OR
-""Your $shipOrFleet has been scanned and identified, everything is in order. Burn bright, $playerSirOrMadam.""
-OR
-""Scanned and identified. We read you loud and clear, $playerSirOrMadam. Clean jumps and high burn."" $PersonRank $personLastName quickly signs off with a flash of the $faction sigil.""",,
-,,,,,,
-VINDAC_GreetingDefaultInfamous,OpenCommLink,"$faction.id == vse_vindac,
+As the comms seemingly fix themselves, $PersonPost $personLastName recognizes you from all over the net.
+
+""It's... you. The things you've done, I can't believe-"" $heOrShe clears $hisOrHer throat uncomfortably, ""What do you want with us?""",,
+greetingVINDACInfamousFriendly,OpenCommLink,"$faction.id == vse_vindac
+$faction.friendlyToPlayer
 $player.atrocities > 1
-$player.transponderOn
-RollProbability 0.3 score:2",#$recognizedAsInfamous,"""You have been scanned and,"" $heOrShe blinks at $hisOrHer screen, then says almost - but not quite - under $hisOrHer breath, ""$playerName. The butcher."" 
-
-$HeOrShe straightens $hisOrHer back, ""We serve for the glory of $theFaction, $playerSirOrMadam. That much has always been true. ""
-
-""I just... I just hope it was worth it."" $PersonRank $personLastName looks off to the side wistfully before suddenly adopting a stoic expression. Whatever feelings $HeOrShe had just displayed, they've faded into obscurity behind the mask of a worn and tired soldier.",,
+RollProbability 0.3 score:2","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Ah, Captain $playerName."" $HeOrShe looks uneasy. ""Your reputation... precedes you. We are not searching for any trouble so state your business with us and we'll be on our way..""",,
+"#END VINDAC Fleet Greeting Lines",,,,,,
 ,,,,,,
-,,,,,,
-#New Faction description,,,,,,
+# VINDAC Faction Relation Description,,,,,,
 VINDAC_CooperativeDescAttrocity,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
 $faction.id == vse_vindac
 $player.atrocities > 1",,"As a renowned member of $theFactionLong, your influence within is unshakeable and you are as respected as you are feared. Throughout the Void Sakura Empire, glasses are raised in your name, though some prefer not to openly do so following some of the more questionable actions you have comitted in the sector.",,
-,,,,,,
 VINDAC_CooperativeDesc,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
 $faction.id == vse_vindac
 $player.atrocities < 2",,"As a renowned member of $theFactionLong, your influence within is unshakeable. Throughout the Void Sakura Empire, glasses are raised in your name with pride and chanting.",,
+VINDAC_FriendlyDesc,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == vse_vindac
+$player.atrocities < 2",,"Being on good terms with $theFactionLong, your influence is starting to be noticed. Throughout the Void Sakura Empire stories are being shared by a reputable captain that might just be able to rise higher through the ranks.",,
+"#END VINDAC Faction Relation Description",,,,,,
+,,,,,,
+# VSE Fleet Greeting Lines,,,,,,
+,,,,,,
+"#END VSE Fleet Greeting Lines",,,,,,
+,,,,,,
+# ER Fleet Greeting Lines,,,,,,
+NEW RULE,,,,,,
+"#END ER Fleet Greeting Lines",,,,,,
+

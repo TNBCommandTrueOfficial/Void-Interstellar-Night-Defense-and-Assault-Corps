@@ -1,0 +1,11 @@
+{
+  "baseHullId": "nebula",
+  "baseValueMult": 1,
+  "descriptionId": "nebula",
+  "descriptionPrefix": "A purple variant of the Nebula.",
+  "hullDesignation": "FRIGATE",
+  "hullName": "Nebula(PU)",
+  "restoreToBaseHull": false,
+  "skinHullId": "nebula_purple",
+  "spriteName": "graphics/VNC/ships/nebula/nebula_purple.png"
+}
